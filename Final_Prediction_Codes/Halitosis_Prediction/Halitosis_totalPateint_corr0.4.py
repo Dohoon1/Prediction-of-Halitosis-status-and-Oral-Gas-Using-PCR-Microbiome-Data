@@ -29,7 +29,7 @@ warnings.filterwarnings('ignore')
 # ===================================================================
 # 1. Configuration
 # ===================================================================
-MAIN_OUTPUT_DIR = "Analysis_Result_Halitosis_NewMethod_Combined"
+MAIN_OUTPUT_DIR = "Analysis_Result_Halitosis_NewMethod_Combined_corr0.4"
 os.makedirs(MAIN_OUTPUT_DIR, exist_ok=True)
 
 FILE_PATH = "PCR_NGS_Data.xlsx"
