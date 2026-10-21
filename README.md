@@ -1,10 +1,6 @@
 # PCR major-revision analysis code (2026-10-21)
 
-이 폴더는 PCR 연구 전용 수정본입니다. Desktop의 원본 코드·Excel·Word는 수정하지 않았습니다. 실제 입력 workbook을 로컬로 복사했고 원본 해시를 review/original_source_hashes.json에 기록했습니다. NGS 분석, sequencing QC, ASV, rarefaction은 이 분석에 포함하지 않습니다. 원자료·측정 결과로 제시할 가상 대상자나 값을 만들지 않습니다. SMOTENC의 합성 행은 training fold 안의 명시적 resampling이며 원본 102명이나 test fold에 추가하지 않습니다. tests/의 작은 검증 fixture는 연구 결과와 분리됩니다.
-
-ZIP은 원자료·results·figures를 제외한 코드 전용입니다. ZIP만 별도 폴더에 풀면 `data/PCR_NGS_Data.xlsx`를 준비하거나 `--input 원본Excel경로`를 지정하십시오. 이 로컬 작업 폴더에는 검증용 원자료 복사본이 있습니다.
-
-## 실행 단계와 완료의 의미
+## 실행 단계와 완료 의미
 
 - `preflight`: 16종 whitelist, 102명/72·30, ID-라벨 해시, VSC 합계, 별도 Total 제외를 검증합니다.
 - `descriptive`: 실제 16종 자료의 다양성, raw/log/relative/CLR 군 비교, 효과크기·보정, 상관·군집 안정성, 자료 inventory를 계산합니다. 모델은 학습하지 않습니다.
@@ -14,7 +10,7 @@ ZIP은 원자료·results·figures를 제외한 코드 전용입니다. ZIP만 �
 
 `manifest.status=complete`는 선택한 단계가 끝났다는 뜻입니다. descriptive complete는 본 모델, sensitivity 또는 순열이 끝났다는 뜻이 아닙니다. 실행된 단계·개발 프로필 여부·config/입력/코드 해시를 확인하십시오.
 
-## 고정한 분석 규칙
+## 분석 규칙
 
 | 항목 | 규칙 |
 |---|---|
