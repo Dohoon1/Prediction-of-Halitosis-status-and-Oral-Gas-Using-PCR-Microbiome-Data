@@ -1,0 +1,1 @@
+Code-only ZIP excludes the private workbook. Copy your unchanged PCR workbook here as PCR_NGS_Data.xlsx, or pass --input to code/01_analysis.py. Original supplied participant labels and 16-target whitelist are locked in revision profiles. Do not substitute another study.
