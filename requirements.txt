@@ -1,8 +1,9 @@
+# Core: input validation, statistics, linear modeling and final figures.
 numpy>=2.0,<3
-pandas>=2.2,<4
+pandas>=2.2,<3
 openpyxl>=3.1,<4
 scipy>=1.14,<2
 scikit-learn>=1.5,<2
-imbalanced-learn>=0.12,<1
-torch>=2.5,<3
+imbalanced-learn>=0.14,<1
+statsmodels>=0.14,<0.16
 matplotlib>=3.9,<4
