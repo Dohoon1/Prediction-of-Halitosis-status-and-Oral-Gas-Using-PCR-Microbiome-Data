@@ -4,14 +4,18 @@
 # 0. requirements
 python -m pip install -r requirements.txt
 
+-------------------------------------------------------------
 # 1.
 python code/01_analysis.py --stage preflight --results results/preflight_01
+
 -------------------------------------------------------------
 # 2. Main Analysis
 python code/01_analysis.py --stage analysis --results results/main_01
+
 -------------------------------------------------------------
 # 3. Sensitivity Analysis
 python code/01_analysis.py --stage sensitivity --sensitivity-models --results results/sensitivity_01
+
 -------------------------------------------------------------
 # 4. Permutation validation
 python code/01_analysis.py --config config/revision_permutation.json --stage permutation --results results/permutation_01
