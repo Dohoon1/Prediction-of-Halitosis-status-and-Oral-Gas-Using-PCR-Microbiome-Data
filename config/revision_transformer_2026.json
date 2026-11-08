@@ -1,0 +1,161 @@
+{
+  "profile": "revision_transformer_2026",
+  "development_run": false,
+  "provenance": {
+    "source_commit": "51a1e0ad7f8506cd2e537644bf8ae6535a2d5b7c",
+    "scope": "Reconstructed explicit rerun settings from final R2 Methods and public engine; historical unpublished run files are not reconstructed.",
+    "seed_scope": "Rerun seed set inherited from public sensitivity.py defaults; original seed-by-seed outputs are not deposited. No historical exact-match assertion."
+  },
+  "data": {
+    "path": "data/PCR_NGS_Data.xlsx",
+    "expected_participants": 102,
+    "expected_class_counts": {
+      "0": 72,
+      "1": 30
+    },
+    "expected_pcr_targets": 16,
+    "expected_label_sha256": "66befbd2f4ac31e6bda34b9b0815b99c80b82f5294192163f44a1e92a6588603",
+    "primary_outcome_definition": "Author-confirmed self-reported complaint AND sex-specific VSC criterion; retain supplied original labels.",
+    "expected_vsc_only_label_differences": 6,
+    "sex_vsc_thresholds": {
+      "F": 65.79,
+      "M": 79.94
+    },
+    "sex_vsc_threshold_reference": "Sex-specific VSC reference values reported in the manuscript; VSC-only is a descriptive audit, not the primary outcome.",
+    "vsc_tolerance_ppb": 0.01
+  },
+  "cv": {
+    "outer_folds": 5,
+    "outer_repeats": 10,
+    "inner_folds": 3,
+    "seed": 42
+  },
+  "modeling": {
+    "tasks": [
+      "classification",
+      "regression"
+    ],
+    "panels": "nested",
+    "panel_names": [
+      "Clinical_only",
+      "Single_Aggregatibacter_actinomycetemcomitans",
+      "Single_Campylobacter_rectus",
+      "Single_Eikenella_corrodens",
+      "Single_Eubacterium_nodatum",
+      "Single_Fusobacterium_alocis",
+      "Single_Fusobacterium_nucleatum",
+      "Single_Lactobacillus_casei",
+      "Single_Parvimonas_micra",
+      "Single_Porphyromonas_endodontalis",
+      "Single_Porphyromonas_gingivalis",
+      "Single_Prevotella_intermedia",
+      "Single_Prevotella_nigrescens",
+      "Single_Streptococcus_mutans",
+      "Single_Streptococcus_sobrinus",
+      "Single_Tannerella_forsythia",
+      "Single_Treponema_denticola",
+      "Cluster_Largest",
+      "Cluster_Second"
+    ],
+    "include_clinical": true,
+    "include_all_pcr": false,
+    "cluster_strategies": [
+      "largest",
+      "second"
+    ],
+    "include_cluster_scores": false,
+    "include_dummy": false,
+    "include_selectors": false,
+    "selector_names": [],
+    "pcr_transform": "none",
+    "target_transform": "none",
+    "sampling": "smotenc",
+    "smote_k_neighbors": 5,
+    "class_weight": null,
+    "missing_policy": "error",
+    "threshold": 0.5,
+    "cluster_by": "pooled",
+    "clustering_method": "connected_components",
+    "correlation_method": "pearson",
+    "correlation_threshold": 0.4,
+    "absolute_correlation": false,
+    "correlation_inclusive": false,
+    "algorithms": {
+      "classification": [
+        "transformer"
+      ],
+      "regression": [
+        "transformer"
+      ]
+    }
+  },
+  "grids": {
+    "transformer": {
+      "embedding_dim": [
+        16,
+        32,
+        64
+      ],
+      "heads": [
+        4
+      ],
+      "depth": [
+        3
+      ],
+      "lr": [
+        0.0001
+      ],
+      "epochs": [
+        100
+      ],
+      "batch_size": [
+        8
+      ]
+    }
+  },
+  "bootstrap": {
+    "iterations": 0,
+    "seed": 42
+  },
+  "statistics": {
+    "effect_bootstrap_repeats": 2000,
+    "seed": 42,
+    "binary_association_method": "logit",
+    "association_taxa": [
+      "PCR_Eubacterium_nodatum",
+      "PCR_Porphyromonas_gingivalis",
+      "PCR_Campylobacter_rectus"
+    ]
+  },
+  "sensitivity": {
+    "model_variants": [],
+    "alternative_outcomes": [],
+    "correlation_thresholds": [
+      0.3,
+      0.4,
+      0.5,
+      0.6
+    ],
+    "cluster_bootstrap_repeats": 100,
+    "clr_pseudocount_copies_ml": 1,
+    "absolute_correlation": false,
+    "seed": 42
+  },
+  "permutation": {
+    "iterations": 100,
+    "outer_repeats": 2,
+    "seed": 42,
+    "gas_family": "joint",
+    "outer_folds": 5,
+    "inner_folds": 3
+  },
+  "importance": {
+    "permutations": 0
+  },
+  "neural": {
+    "seed": 2026,
+    "device": "cpu",
+    "early_stopping": false,
+    "dropout": 0.1
+  }
+}
