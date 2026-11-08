@@ -19,3 +19,8 @@ python run.py figures --output results/final_figures
 
 python run.py smoke --neural --output results/development_check
 
+```text
+python run.py linear --output results/linear_main
+python run.py transformer --output results/transformer_main
+python run.py sensitivity --output results/sensitivity_main
+```
