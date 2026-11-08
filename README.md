@@ -26,5 +26,5 @@ python run.py sensitivity --output results/sensitivity_main
 ```
 
 ```text
-python run.py permutation --output results/permutation_main --batch-size 100
+python run.py permutation --output results/permutation_main
 ```
