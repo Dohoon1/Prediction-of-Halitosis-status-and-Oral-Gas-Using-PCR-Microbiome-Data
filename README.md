@@ -7,8 +7,10 @@ python -m pip install -r requirements-neural.txt
 
 -------------------------------------------------------------
 # Main analysis
-python run.py check --output results/input_check//
-python run.py test//
+python run.py check --output results/input_check
+
+python run.py test
+
 python run.py statistics --output results/statistics
 python code/verify_reference.py --results results/statistics --report results/statistics/reference_check.json
 python run.py figures --output results/final_figures
