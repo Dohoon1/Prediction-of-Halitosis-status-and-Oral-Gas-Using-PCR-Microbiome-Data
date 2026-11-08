@@ -1,0 +1,14 @@
+test_cluster_log_score_matches_manuscript_definition (test_analysis_contracts.AnalysisContracts.test_cluster_log_score_matches_manuscript_definition) ... ok
+test_duplicate_oof_rows_are_rejected (test_analysis_contracts.AnalysisContracts.test_duplicate_oof_rows_are_rejected) ... ok
+test_error_comparison_averages_errors_before_repeats (test_analysis_contracts.AnalysisContracts.test_error_comparison_averages_errors_before_repeats) ... ok
+test_final_model_family_matches_multiplicity_scope (test_analysis_contracts.AnalysisContracts.test_final_model_family_matches_multiplicity_scope) ... ok
+test_fixed_cluster_variant_uses_matching_panel_identifiers (test_analysis_contracts.AnalysisContracts.test_fixed_cluster_variant_uses_matching_panel_identifiers) ... ok
+test_heldout_values_do_not_change_fitted_scaler_or_clusters (test_analysis_contracts.AnalysisContracts.test_heldout_values_do_not_change_fitted_scaler_or_clusters) ... ok
+test_label_mapping_lock_catches_swaps_even_with_same_counts (test_analysis_contracts.AnalysisContracts.test_label_mapping_lock_catches_swaps_even_with_same_counts) ... ok
+test_original_cohort_and_vsc_only_are_distinct (test_analysis_contracts.AnalysisContracts.test_original_cohort_and_vsc_only_are_distinct) ... ok
+test_panel_diversity_uses_target_counts_and_natural_log (test_analysis_contracts.AnalysisContracts.test_panel_diversity_uses_target_counts_and_natural_log) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.917s
+
+OK

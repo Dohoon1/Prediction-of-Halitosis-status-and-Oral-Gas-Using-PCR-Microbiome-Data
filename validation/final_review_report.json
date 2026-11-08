@@ -1,0 +1,787 @@
+{
+  "checked_utc": "2026-11-08T02:14:11.047219+00:00",
+  "scope": "Final review of the five newly uploaded documents. Reviewer 3 excluded from review and retained exactly, including XML formatting.",
+  "status": "passed",
+  "changes": [
+    {
+      "reason": "The ratios use the four original clinical input variables, not the expanded encoded coefficient count.",
+      "old": "the number of events per predictor parameter",
+      "new": "the crude number of events per original input variable"
+    },
+    {
+      "reason": "State the denominator explicitly without changing the numerical ratios.",
+      "old": "These ratios describe model complexity relative to the available events;",
+      "new": "These ratios count original variables before categorical encoding and provide descriptive context;"
+    },
+    {
+      "reason": "Keep Discussion consistent with the Methods denominator.",
+      "old": "the approximate events per predictor in the outer training folds",
+      "new": "the crude ratios of events to original input variables in the outer training folds"
+    },
+    {
+      "reason": "Grammar in the response opening; Reviewer 3 wording is protected.",
+      "old": "each comment from Reviewers",
+      "new": "each comment from the reviewers"
+    },
+    {
+      "reason": "Reviewer 1 Comment 3 uses the same original-variable denominator as Methods and Discussion.",
+      "old": "6.0 events per predictor",
+      "new": "6.0 events per original input variable before categorical encoding"
+    },
+    {
+      "reason": "STROBE item 10 matches the clarified manuscript terminology.",
+      "old": "Events per predictor parameter are provided as descriptive model-complexity context.",
+      "new": "Crude ratios of events to original input variables before categorical encoding are provided as descriptive context."
+    }
+  ],
+  "layout_changes": [
+    "Normalized title-page nonbreaking spaces so affiliations wrap between words.",
+    "Adjusted abstract spacing and removed one empty paragraph before Methods to prevent isolated headings.",
+    "Adjusted spacing for Supplementary Tables 2, 6 and 7; removed 8 surplus empty paragraphs before Table 7.",
+    "Kept all six supplementary figure captions with their inline images using shared paragraphs and native widow control; no keep-next/keep-lines/page-break flags.",
+    "Adjusted observed heading positions and kept main figure titles with images using ordinary spacing and native widow control."
+  ],
+  "outputs": {
+    "1_Reviewer_Responses_R2.docx": {
+      "sha256": "e70b133bed7e9b9fa34934ec234e17e04d5289a8af649b012b7f6cc9e5fbd506",
+      "source": "1_Reviewer_Responses_R2(1).docx",
+      "source_sha256": "d031c278016aad99fe1d806e788e689ab4f0af7be37f006b40db312bbe8613b8",
+      "sections_removed": 0,
+      "source_images_retained": true
+    },
+    "2_Manuscript_R2.docx": {
+      "sha256": "b1adf93854fb54563ada16692974724eccd4a339aa8b821bbca507e35810ebdb",
+      "source": "2_Manuscript_R2(1).docx",
+      "source_sha256": "475cbfeb169547879b846e1e25361b2cdba6b519581b21c521b85a02329167c3",
+      "sections_removed": 2,
+      "source_images_retained": true
+    },
+    "3_Tables_R2.docx": {
+      "sha256": "0d7dad39fc3657c0c5b41afefc3906a5b934eecb92c0fcaacd47dc45a6717a4e",
+      "source": "3_Tables_R2(2).docx",
+      "source_sha256": "0d7dad39fc3657c0c5b41afefc3906a5b934eecb92c0fcaacd47dc45a6717a4e",
+      "sections_removed": 0,
+      "source_images_retained": true
+    },
+    "4_Supplementary_R2.docx": {
+      "sha256": "f6ba0a15e3bbdcb5233148158e84b6659895e8a5cae6dfc68464f6e51c182671",
+      "source": "4_Supplementary_R2(1).docx",
+      "source_sha256": "11be62ecd6a65610f5e98a457c15af59780164cecd9e2896d23613935fd9413f",
+      "sections_removed": 8,
+      "source_images_retained": true
+    },
+    "5_STROBE_Checklist_R2.docx": {
+      "sha256": "92d48063560655ed87ce19c95112a0d6300f758d49accccdc56bee191746a8e2",
+      "source": "5_STROBE_Checklist_R2(1).docx",
+      "source_sha256": "dbbebee88cb7568eb84701b497bf476cced9ac04e85c3e9241914525966cdcc8",
+      "sections_removed": 0,
+      "source_images_retained": true
+    },
+    "2b_Manuscript_R2_Clean.docx": {
+      "sha256": "d04945d49190ad757969ef8caeb65cb27cf7c851a8a49cdda8a22f2feff04327",
+      "source": "Generated from the uploaded marked manuscript after the same corrections",
+      "sections_removed": 0,
+      "source_images_retained": true
+    }
+  },
+  "reviewer3_XML_unchanged": true,
+  "reviewer3_XML_sha256": "69d6dfaf6d18a574abd0025fe18623764facc3fe4f310d97d7b48ff0819c84f9",
+  "reviewer1_and_2_comments": 13,
+  "all_13_comments_and_locations_reviewed": true,
+  "body_citations": {
+    "body_start": 37,
+    "body_end_exclusive": 94,
+    "captions_excluded": true,
+    "expected_items": 16,
+    "coverage": [
+      {
+        "item": "Figure 1",
+        "cited_in_body": true,
+        "sections": [
+          "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status"
+        ],
+        "paragraph_indices": [
+          67
+        ],
+        "panels": []
+      },
+      {
+        "item": "Figure 2",
+        "cited_in_body": true,
+        "sections": [
+          "3.2. Species-level bacterial signals and correlation-based microbial clustering"
+        ],
+        "paragraph_indices": [
+          70,
+          71
+        ],
+        "panels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "item": "Figure 3",
+        "cited_in_body": true,
+        "sections": [
+          "3.3. Predictive performance for VSC-confirmed halitosis classification",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          74,
+          75,
+          78,
+          79
+        ],
+        "panels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "item": "Table 1",
+        "cited_in_body": true,
+        "sections": [
+          "2.4. Microbial diversity and correlation-based feature construction",
+          "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status"
+        ],
+        "paragraph_indices": [
+          52,
+          67,
+          68
+        ],
+        "panels": []
+      },
+      {
+        "item": "Table 2",
+        "cited_in_body": true,
+        "sections": [
+          "2.4. Microbial diversity and correlation-based feature construction",
+          "2.5. Model development and nested cross-validation",
+          "3.3. Predictive performance for VSC-confirmed halitosis classification",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          54,
+          57,
+          74,
+          75,
+          78,
+          79
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 1",
+        "cited_in_body": true,
+        "sections": [
+          "3.2. Species-level bacterial signals and correlation-based microbial clustering"
+        ],
+        "paragraph_indices": [
+          70
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 2",
+        "cited_in_body": true,
+        "sections": [
+          "2.4. Microbial diversity and correlation-based feature construction",
+          "2.5. Model development and nested cross-validation",
+          "3.3. Predictive performance for VSC-confirmed halitosis classification",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          54,
+          57,
+          74,
+          76,
+          78,
+          80
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 3",
+        "cited_in_body": true,
+        "sections": [
+          "2.6. Statistical analysis and performance metrics",
+          "3.2. Species-level bacterial signals and correlation-based microbial clustering"
+        ],
+        "paragraph_indices": [
+          61,
+          70
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 4",
+        "cited_in_body": true,
+        "sections": [
+          "2.4. Microbial diversity and correlation-based feature construction",
+          "2.6. Statistical analysis and performance metrics",
+          "3.2. Species-level bacterial signals and correlation-based microbial clustering"
+        ],
+        "paragraph_indices": [
+          53,
+          61,
+          71,
+          72
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 5",
+        "cited_in_body": true,
+        "sections": [
+          "2.2. VSC measurement and halitosis definition",
+          "2.5. Model development and nested cross-validation",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          47,
+          58,
+          81
+        ],
+        "panels": [
+          "A",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "item": "Supplementary Table 6",
+        "cited_in_body": true,
+        "sections": [
+          "2.6. Statistical analysis and performance metrics",
+          "3.2. Species-level bacterial signals and correlation-based microbial clustering"
+        ],
+        "paragraph_indices": [
+          61,
+          70
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 7",
+        "cited_in_body": true,
+        "sections": [
+          "3.3. Predictive performance for VSC-confirmed halitosis classification",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          74,
+          78,
+          80
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Table 8",
+        "cited_in_body": true,
+        "sections": [
+          "2.4. Microbial diversity and correlation-based feature construction",
+          "2.5. Model development and nested cross-validation",
+          "3.3. Predictive performance for VSC-confirmed halitosis classification",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          54,
+          59,
+          75,
+          79
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Figure 1",
+        "cited_in_body": true,
+        "sections": [
+          "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status"
+        ],
+        "paragraph_indices": [
+          68
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Figure 2",
+        "cited_in_body": true,
+        "sections": [
+          "3.2. Species-level bacterial signals and correlation-based microbial clustering"
+        ],
+        "paragraph_indices": [
+          70
+        ],
+        "panels": []
+      },
+      {
+        "item": "Supplementary Figure 3",
+        "cited_in_body": true,
+        "sections": [
+          "3.3. Predictive performance for VSC-confirmed halitosis classification",
+          "3.4. Predictive performance for continuous oral gas prediction"
+        ],
+        "paragraph_indices": [
+          74,
+          78
+        ],
+        "panels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    ],
+    "missing": [],
+    "invalid": [],
+    "all_callouts": [
+      {
+        "family": "Supplementary Table",
+        "number": 5,
+        "panel": "C",
+        "paragraph_index": 47,
+        "section": "2.2. VSC measurement and halitosis definition",
+        "citation": "Supplementary Table 5C–D"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 5,
+        "panel": "D",
+        "paragraph_index": 47,
+        "section": "2.2. VSC measurement and halitosis definition",
+        "citation": "Supplementary Table 5C–D"
+      },
+      {
+        "family": "Table",
+        "number": 1,
+        "panel": null,
+        "paragraph_index": 52,
+        "section": "2.4. Microbial diversity and correlation-based feature construction",
+        "citation": "Table 1"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 4,
+        "panel": null,
+        "paragraph_index": 53,
+        "section": "2.4. Microbial diversity and correlation-based feature construction",
+        "citation": "Supplementary Table 4"
+      },
+      {
+        "family": "Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 54,
+        "section": "2.4. Microbial diversity and correlation-based feature construction",
+        "citation": "Table 2"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 54,
+        "section": "2.4. Microbial diversity and correlation-based feature construction",
+        "citation": "Supplementary Tables 2 and 8"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 8,
+        "panel": null,
+        "paragraph_index": 54,
+        "section": "2.4. Microbial diversity and correlation-based feature construction",
+        "citation": "Supplementary Tables 2 and 8"
+      },
+      {
+        "family": "Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 57,
+        "section": "2.5. Model development and nested cross-validation",
+        "citation": "Table 2"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 57,
+        "section": "2.5. Model development and nested cross-validation",
+        "citation": "Supplementary Table 2"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 5,
+        "panel": "A",
+        "paragraph_index": 58,
+        "section": "2.5. Model development and nested cross-validation",
+        "citation": "Supplementary Table 5A"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 8,
+        "panel": null,
+        "paragraph_index": 59,
+        "section": "2.5. Model development and nested cross-validation",
+        "citation": "Supplementary Table 8"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 3,
+        "panel": null,
+        "paragraph_index": 61,
+        "section": "2.6. Statistical analysis and performance metrics",
+        "citation": "Supplementary Tables 3, 4 and 6"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 4,
+        "panel": null,
+        "paragraph_index": 61,
+        "section": "2.6. Statistical analysis and performance metrics",
+        "citation": "Supplementary Tables 3, 4 and 6"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 6,
+        "panel": null,
+        "paragraph_index": 61,
+        "section": "2.6. Statistical analysis and performance metrics",
+        "citation": "Supplementary Tables 3, 4 and 6"
+      },
+      {
+        "family": "Figure",
+        "number": 1,
+        "panel": null,
+        "paragraph_index": 67,
+        "section": "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status",
+        "citation": "Figure 1"
+      },
+      {
+        "family": "Table",
+        "number": 1,
+        "panel": null,
+        "paragraph_index": 67,
+        "section": "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status",
+        "citation": "Table 1"
+      },
+      {
+        "family": "Table",
+        "number": 1,
+        "panel": null,
+        "paragraph_index": 68,
+        "section": "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status",
+        "citation": "Table 1"
+      },
+      {
+        "family": "Supplementary Figure",
+        "number": 1,
+        "panel": null,
+        "paragraph_index": 68,
+        "section": "3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status",
+        "citation": "Supplementary Figure 1"
+      },
+      {
+        "family": "Figure",
+        "number": 2,
+        "panel": "A",
+        "paragraph_index": 70,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Figure 2A"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 1,
+        "panel": null,
+        "paragraph_index": 70,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Supplementary Tables 1, 3 and 6"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 3,
+        "panel": null,
+        "paragraph_index": 70,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Supplementary Tables 1, 3 and 6"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 6,
+        "panel": null,
+        "paragraph_index": 70,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Supplementary Tables 1, 3 and 6"
+      },
+      {
+        "family": "Supplementary Figure",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 70,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Supplementary Figure 2"
+      },
+      {
+        "family": "Figure",
+        "number": 2,
+        "panel": "B",
+        "paragraph_index": 71,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Figure 2B–D"
+      },
+      {
+        "family": "Figure",
+        "number": 2,
+        "panel": "C",
+        "paragraph_index": 71,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Figure 2B–D"
+      },
+      {
+        "family": "Figure",
+        "number": 2,
+        "panel": "D",
+        "paragraph_index": 71,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Figure 2B–D"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 4,
+        "panel": null,
+        "paragraph_index": 71,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Supplementary Table 4"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 4,
+        "panel": null,
+        "paragraph_index": 72,
+        "section": "3.2. Species-level bacterial signals and correlation-based microbial clustering",
+        "citation": "Supplementary Table 4"
+      },
+      {
+        "family": "Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 74,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Table 2"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "A",
+        "paragraph_index": 74,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Figure 3A"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 74,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Supplementary Tables 2 and 7"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 7,
+        "panel": null,
+        "paragraph_index": 74,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Supplementary Tables 2 and 7"
+      },
+      {
+        "family": "Supplementary Figure",
+        "number": 3,
+        "panel": "A",
+        "paragraph_index": 74,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Supplementary Figure 3A"
+      },
+      {
+        "family": "Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 75,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Table 2"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "A",
+        "paragraph_index": 75,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Figure 3A"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 8,
+        "panel": null,
+        "paragraph_index": 75,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Supplementary Table 8"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 76,
+        "section": "3.3. Predictive performance for VSC-confirmed halitosis classification",
+        "citation": "Supplementary Table 2"
+      },
+      {
+        "family": "Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Table 2"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "B",
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Figure 3B–D"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "C",
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Figure 3B–D"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "D",
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Figure 3B–D"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Tables 2 and 7"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 7,
+        "panel": null,
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Tables 2 and 7"
+      },
+      {
+        "family": "Supplementary Figure",
+        "number": 3,
+        "panel": "B",
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Figure 3B–D"
+      },
+      {
+        "family": "Supplementary Figure",
+        "number": 3,
+        "panel": "C",
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Figure 3B–D"
+      },
+      {
+        "family": "Supplementary Figure",
+        "number": 3,
+        "panel": "D",
+        "paragraph_index": 78,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Figure 3B–D"
+      },
+      {
+        "family": "Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 79,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Table 2"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "B",
+        "paragraph_index": 79,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Figure 3B–D"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "C",
+        "paragraph_index": 79,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Figure 3B–D"
+      },
+      {
+        "family": "Figure",
+        "number": 3,
+        "panel": "D",
+        "paragraph_index": 79,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Figure 3B–D"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 8,
+        "panel": null,
+        "paragraph_index": 79,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Table 8"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 2,
+        "panel": null,
+        "paragraph_index": 80,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Tables 2 and 7"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 7,
+        "panel": null,
+        "paragraph_index": 80,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Tables 2 and 7"
+      },
+      {
+        "family": "Supplementary Table",
+        "number": 5,
+        "panel": null,
+        "paragraph_index": 81,
+        "section": "3.4. Predictive performance for continuous oral gas prediction",
+        "citation": "Supplementary Table 5"
+      }
+    ]
+  },
+  "native_super_subscript_issues": [],
+  "formatting_issues": [],
+  "main_linear_models_per_outcome": 22,
+  "main_transformer_models_per_outcome": 19,
+  "supplementary_tables": 8,
+  "supplementary_figures": 3,
+  "main_Table2_columns": 11,
+  "all_source_performance_and_descriptive_table_values_retained": true,
+  "model_refitting_performed_in_this_final_review": false
+}

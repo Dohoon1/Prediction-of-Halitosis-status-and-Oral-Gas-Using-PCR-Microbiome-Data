@@ -1,0 +1,41 @@
+{
+  "updated_utc": "2026-11-08T01:11:05.208150+00:00",
+  "tables": {
+    "removed_positioning": [
+      "tblpPr"
+    ],
+    "inline_table": true,
+    "width_twips": 15394,
+    "column_widths_twips": [
+      4464,
+      3024,
+      3024,
+      2448,
+      2434
+    ],
+    "all_cell_values_unchanged": true,
+    "table2_xml_unchanged": true
+  },
+  "response": {
+    "source_file": "1_Reviewer_Responses_R2.docx",
+    "source_paragraph_indices": [
+      109,
+      110
+    ],
+    "reviewer3_source_start": 109,
+    "copied_nonempty_paragraphs": 2,
+    "responses": 3,
+    "reviewer3_text_sha256": "cb11b52c71b3291f34cde08cdef4b9bd914fde5002b54494951e30cb6addffdb",
+    "verbatim_text_match": true,
+    "existing_response_paragraphs_unchanged": true,
+    "reviewer3_style_matches_reviewers1_and2": true,
+    "comment_color": "000000",
+    "comment_italic": true,
+    "response_color": "1857A4",
+    "response_headings_bold": true
+  },
+  "outputs": {
+    "3_Tables_R2_Corrected.docx": "779edea5f13ccb151ab922f41c93266bea75692479cfb09ce08c68e80fc6bd2d",
+    "1_Reviewer_Responses_R2_WithReviewer3.docx": "0de9521c626a75b372da0f3b3202353b8c35b10509bc2998368057c47cf3b976"
+  }
+}

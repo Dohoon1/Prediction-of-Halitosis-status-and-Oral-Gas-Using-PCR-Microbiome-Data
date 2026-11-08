@@ -1,0 +1,47 @@
+{
+  "updated_utc": "2026-11-08T01:28:54.025628+00:00",
+  "source_filename": "3_Tables_R2.docx",
+  "before_rows": 22,
+  "before_columns": 12,
+  "after_rows": 24,
+  "after_columns": 11,
+  "removed_column": "Task",
+  "section_rows": [
+    {
+      "row_index": 1,
+      "label": "Binary halitosis classification",
+      "spans": 11
+    },
+    {
+      "row_index": 12,
+      "label": "Gas prediction",
+      "spans": 11
+    }
+  ],
+  "preserved_outcome_column": true,
+  "numeric_values_and_data_cell_run_formatting_unchanged": true,
+  "Table1_XML_unchanged": true,
+  "caption_and_footnotes_XML_unchanged": true,
+  "physical_tables_in_document": 2,
+  "square_markers": 0,
+  "manual_page_breaks": 0,
+  "sections": 1,
+  "column_widths_twips": [
+    1080,
+    1440,
+    2800,
+    2150,
+    900,
+    900,
+    700,
+    800,
+    2150,
+    1100,
+    1100
+  ],
+  "output_filename": "3_Tables_R2_Grouped.docx",
+  "output_sha256": "b210902ed1551ac2e6b837c46f97f4612994681aad369c67057eb53ddda02a7e",
+  "render_pages_checked": 3,
+  "all_data_rows_on_one_page": true,
+  "Table1_page_pixels_unchanged": true
+}

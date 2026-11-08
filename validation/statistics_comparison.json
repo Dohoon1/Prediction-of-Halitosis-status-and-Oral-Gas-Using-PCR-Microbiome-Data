@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "species_scale_rows": 64,
+  "species_numeric_comparisons": 576,
+  "diversity_indices": 3,
+  "adjusted_associations": 12,
+  "maximum_species_absolute_deviations": {
+    "mean0": 0.0,
+    "mean1": 0.0,
+    "mean_difference": 0.0,
+    "p_welch": 0.0,
+    "p_mannwhitney": 0.0,
+    "welch_bonferroni_16": 0.0,
+    "welch_bh_16": 0.0,
+    "mannwhitney_bonferroni_16": 0.0,
+    "mannwhitney_bh_16": 0.0
+  },
+  "scope": "Data-derived descriptive values and adjusted associations. Reported predictive summaries are not independently refitted by this check."
+}

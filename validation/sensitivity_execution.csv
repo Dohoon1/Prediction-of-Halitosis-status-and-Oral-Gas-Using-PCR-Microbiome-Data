@@ -1,0 +1,8 @@
+name,family,status,reason
+balanced_no_sampling,model_settings,completed,Explicit supplied runner returned.
+gas_log1p,model_settings,completed,Explicit supplied runner returned.
+fixed_exploratory_clusters,model_settings,completed,Explicit supplied runner returned.
+train_derived_clusters,model_settings,completed,Explicit supplied runner returned.
+outcome_supplied_sex_cutoff_audit,alternative_outcome,not_run,Definition audit only: evaluate=true and a stated reference are both required.
+outcome_sex_upper_quartile_audit,alternative_outcome,not_run,Definition audit only: evaluate=true and a stated reference are both required.
+outcome_sex_upper_quartile_refit,alternative_outcome,completed,Explicit supplied runner returned.

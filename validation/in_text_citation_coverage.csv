@@ -1,0 +1,17 @@
+﻿item,cited_in_body,sections,paragraph_indices,panels
+Figure 1,True,3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status,67,
+Figure 2,True,3.2. Species-level bacterial signals and correlation-based microbial clustering,70; 71,A; B; C; D
+Figure 3,True,3.3. Predictive performance for VSC-confirmed halitosis classification; 3.4. Predictive performance for continuous oral gas prediction,74; 75; 78; 79,A; B; C; D
+Table 1,True,2.4. Microbial diversity and correlation-based feature construction; 3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status,52; 67; 68,
+Table 2,True,2.4. Microbial diversity and correlation-based feature construction; 2.5. Model development and nested cross-validation; 3.3. Predictive performance for VSC-confirmed halitosis classification; 3.4. Predictive performance for continuous oral gas prediction,54; 57; 74; 75; 78; 79,
+Supplementary Table 1,True,3.2. Species-level bacterial signals and correlation-based microbial clustering,70,
+Supplementary Table 2,True,2.4. Microbial diversity and correlation-based feature construction; 2.5. Model development and nested cross-validation; 3.3. Predictive performance for VSC-confirmed halitosis classification; 3.4. Predictive performance for continuous oral gas prediction,54; 57; 74; 76; 78; 80,
+Supplementary Table 3,True,2.6. Statistical analysis and performance metrics; 3.2. Species-level bacterial signals and correlation-based microbial clustering,61; 70,
+Supplementary Table 4,True,2.4. Microbial diversity and correlation-based feature construction; 2.6. Statistical analysis and performance metrics; 3.2. Species-level bacterial signals and correlation-based microbial clustering,53; 61; 71; 72,
+Supplementary Table 5,True,2.2. VSC measurement and halitosis definition; 2.5. Model development and nested cross-validation; 3.4. Predictive performance for continuous oral gas prediction,47; 58; 81,A; C; D
+Supplementary Table 6,True,2.6. Statistical analysis and performance metrics; 3.2. Species-level bacterial signals and correlation-based microbial clustering,61; 70,
+Supplementary Table 7,True,3.3. Predictive performance for VSC-confirmed halitosis classification; 3.4. Predictive performance for continuous oral gas prediction,74; 78; 80,
+Supplementary Table 8,True,2.4. Microbial diversity and correlation-based feature construction; 2.5. Model development and nested cross-validation; 3.3. Predictive performance for VSC-confirmed halitosis classification; 3.4. Predictive performance for continuous oral gas prediction,54; 59; 75; 79,
+Supplementary Figure 1,True,3.1. Study cohort characteristics and oral gas differences according to VSC-confirmed halitosis status,68,
+Supplementary Figure 2,True,3.2. Species-level bacterial signals and correlation-based microbial clustering,70,
+Supplementary Figure 3,True,3.3. Predictive performance for VSC-confirmed halitosis classification; 3.4. Predictive performance for continuous oral gas prediction,74; 78,A; B; C; D

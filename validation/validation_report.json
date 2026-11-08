@@ -1,0 +1,272 @@
+{
+  "validated_utc": "2026-11-08T00:54:27.918059+00:00",
+  "status": "passed",
+  "scope": "Code cleanup, data-derived statistical checks, complete final-figure rendering and reduced real training/inference integration. Not a full rerun of reported predictive models.",
+  "cohort": {
+    "n": 102,
+    "primary_counts": {
+      "0": 72,
+      "1": 30
+    },
+    "PCR_targets": 16,
+    "VSC_only_label_differences": 6
+  },
+  "unit_tests": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "log": "unit_tests.txt"
+  },
+  "statistics": {
+    "status": "passed",
+    "species_scale_rows": 64,
+    "species_numeric_comparisons": 576,
+    "diversity_indices": 3,
+    "adjusted_associations": 12,
+    "maximum_species_absolute_deviations": {
+      "mean0": 0.0,
+      "mean1": 0.0,
+      "mean_difference": 0.0,
+      "p_welch": 0.0,
+      "p_mannwhitney": 0.0,
+      "welch_bonferroni_16": 0.0,
+      "welch_bh_16": 0.0,
+      "mannwhitney_bonferroni_16": 0.0,
+      "mannwhitney_bh_16": 0.0
+    },
+    "scope": "Data-derived descriptive values and adjusted associations. Reported predictive summaries are not independently refitted by this check."
+  },
+  "figures": {
+    "figure_count": 9,
+    "formats": [
+      "png",
+      "pdf",
+      "tif"
+    ],
+    "figure_checks": [
+      {
+        "figure": "Figure_1",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          3160,
+          3040
+        ]
+      },
+      {
+        "figure": "Figure_2",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          3649,
+          4297
+        ]
+      },
+      {
+        "figure": "Figure_3",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          3551,
+          3362
+        ]
+      },
+      {
+        "figure": "Supplementary_Figure_1",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          3574,
+          1365
+        ]
+      },
+      {
+        "figure": "Supplementary_Figure_2",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          3501,
+          2133
+        ]
+      },
+      {
+        "figure": "Supplementary_Figure_3A",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          2890,
+          3084
+        ]
+      },
+      {
+        "figure": "Supplementary_Figure_3B",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          2890,
+          3024
+        ]
+      },
+      {
+        "figure": "Supplementary_Figure_3C",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          2890,
+          3024
+        ]
+      },
+      {
+        "figure": "Supplementary_Figure_3D",
+        "same_size": true,
+        "pixels_unchanged": true,
+        "generated_pixels": [
+          2890,
+          3023
+        ]
+      }
+    ]
+  },
+  "development_models": {
+    "smoke_linear": {
+      "classification": {
+        "models": 5,
+        "OOF_rows": 1020,
+        "participants": 102,
+        "repetitions": 2
+      },
+      "regression": {
+        "models": 15,
+        "OOF_rows": 3060,
+        "participants": 102,
+        "repetitions": 2
+      },
+      "outer_folds": 2,
+      "inner_folds": 2,
+      "development_only": true
+    },
+    "smoke_transformer": {
+      "classification": {
+        "models": 3,
+        "OOF_rows": 612,
+        "participants": 102,
+        "repetitions": 2
+      },
+      "regression": {
+        "models": 9,
+        "OOF_rows": 1836,
+        "participants": 102,
+        "repetitions": 2
+      },
+      "outer_folds": 2,
+      "inner_folds": 2,
+      "development_only": true,
+      "epochs": 2
+    }
+  },
+  "transformer_seed_aggregation": {
+    "training_seeds": [
+      11,
+      42,
+      2026
+    ],
+    "actual_short_runs": true,
+    "epochs": 2,
+    "sample_SD_ddof": 1,
+    "status": "passed",
+    "publication_results": false
+  },
+  "sensitivity": {
+    "status": "passed",
+    "development_only": true,
+    "executed_variants": [
+      "balanced_no_sampling",
+      "gas_log1p",
+      "fixed_exploratory_clusters",
+      "train_derived_clusters",
+      "outcome_sex_upper_quartile_refit"
+    ],
+    "VSC_only_definition": "audit only; intentionally not fitted",
+    "log": "sensitivity_execution.csv"
+  },
+  "permutation_resume": {
+    "status": "passed",
+    "development_only": true,
+    "requested_B": 2,
+    "first_invocation_completed_B": 1,
+    "resumed_completed_B": 2,
+    "final_completed_ids": [
+      0,
+      1
+    ],
+    "changed_configuration_rejected": true,
+    "observed_and_null_CV": {
+      "outer_folds": 2,
+      "outer_repeats": 1,
+      "inner_folds": 2
+    }
+  },
+  "not_executed_in_cleanup": [
+    "full 5-fold x 10-repeat, inner 3-fold Linear refitting",
+    "full 19-panel x 3-seed Transformer training at 100 epochs",
+    "100-permutation full Linear family"
+  ],
+  "remote_repository_updated": false,
+  "code_sha256": {
+    "code/analysis.py": "03ed75a168aef4ea8c62ef8f1464e6f245ee50ab7bbef1f529e4f2f95d7f9f06",
+    "code/common.py": "0ee8282d3307443c317c801010fd3a92da50e861aab7d51cc8d276ca41fd3f7e",
+    "code/diagnostic_figures.py": "289f707780d75ea06c5151fd784b8e6904808fdbb1e7db56e28d288b665318a9",
+    "code/final_figures.py": "da65d224a7b26bdc39fc3131cc8dfeeaafe3cf8469294169484517d2b8dd2739",
+    "code/modeling.py": "a768a3b33802fe27d962e0721eab39b98e7d5848b0322194e8332778af40c4f7",
+    "code/neural.py": "45da9e0d34fc068d3377bcabfff5cf38cbc597f4beb752904ccbfb1eb22d5ed8",
+    "code/pcr_statistics.py": "eb0ec47cab9e5b90ea8d885aa26564db8012643c3225cd7e5cebec244b92c675",
+    "code/permutation_figures.py": "80deb255cf4660599216d02280ff673a54a86b45346368f3fedfef242def93ac",
+    "code/reporting.py": "5442b7ada3b4e08a4974c19c8e5590df514c599da1b68cfe16dcbd209abb5792",
+    "code/sensitivity.py": "86dfafb18b4211aa53e628bc4be94b2d00ceff74dbba3f6524a6944d4783e5f8",
+    "code/validation.py": "7365a3c12414dcd1939c34976ba998a43678f93c768b020e3a59434e7b6299e2",
+    "code/verify_reference.py": "d2d863e4ab67a6a141150c5e14217fc8cd8a892565fb9ef69b94ba14b18f3f5d",
+    "code/workflow_icons.py": "e005feb4bbc7f1d275b17cdba3eb87776708981b1c307872fad581b44f59944c",
+    "run.py": "b88931222e78b4d9e8aa23d473dd7ecf74a17c8401aafa63ef8a9242ee7e19fc",
+    "tests/test_analysis_contracts.py": "78832c6ed0a3b1944258745e69f036489af1b260384c35e14682bcfca24f5f91"
+  },
+  "config_sha256": {
+    "revision_main.json": "0175ff82b42c3afe32ea707ec43aaff6518594784dd8bfc0462d95da792d84ee",
+    "revision_sensitivity.json": "d01743cb918df6ddfd6c162f16e26bc492910c85b71d30f16371681f7bf822a9",
+    "revision_transformer_11.json": "955aea95c9550d858e01ac2eb364c79c671a373bec60befc02f88bf160e2cf37",
+    "revision_transformer_2026.json": "50f88fd26ba409951003b481a6068aaa9b0742d130ab2155ebd7d4e042f3a668",
+    "revision_transformer_42.json": "236060d1226deb8929f1a72736e98cde7b08be95e1512f7e77c329b799ec0fef",
+    "smoke_linear.json": "5cf6d473560829a51ba97d698db091b9bb9530c9122ab8c39407afae7dad8810",
+    "smoke_sensitivity.json": "50f7828154fff0bc47a90b96af0d9e836a257b5d955bea3549d0f70d6c46d0f7",
+    "smoke_transformer.json": "24c91814a06f627984c9e3cfde96681d0ae12170976ec7fe81772e78efd8412d"
+  },
+  "manuscript_files_unchanged_during_code_cleanup": true,
+  "subsequent_document_update": {
+    "audit": "document_update_audit.json",
+    "scope": "Table 1 layout repair and verbatim Reviewer 3 appendix styled consistently with Reviewers 1 and 2. No analysis code, data or reported numerical results changed."
+  },
+  "subsequent_citation_update": {
+    "audit": "in_text_citation_audit.json",
+    "coverage": "in_text_citation_coverage.csv",
+    "expected_items": 16,
+    "cited_in_body": 16,
+    "missing_items": [],
+    "out_of_range_callouts": [],
+    "scope": "Added missing narrative callouts for Supplementary Figures 1, 2 and 3A-D. All 16 numbered tables and figures are cited in the actual body; captions were excluded from the check."
+  },
+  "table2_group_layout_update": {
+    "status": "passed",
+    "audit": "table2_group_layout_audit.json",
+    "scope": "Removed repeated Task column and inserted two full-width section rows. All 21 data records are retained. Table 1, manuscript body citations and Reviewer 3 responses are unchanged."
+  },
+  "final_uploaded_document_review": {
+    "checked_utc": "2026-11-08T02:14:34.936033+00:00",
+    "status": "passed",
+    "reviewer1_and_2_comments_checked": 13,
+    "body_citation_items": 16,
+    "reviewer3_XML_unchanged": true,
+    "reported_numerical_results_unchanged": true,
+    "model_refitting_performed": false,
+    "report": "final_review_report.json",
+    "render_report": "render_audit.json"
+  }
+}

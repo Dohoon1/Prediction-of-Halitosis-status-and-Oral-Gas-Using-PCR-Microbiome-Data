@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-11-08T02:14:34.936033+00:00",
+  "status": "passed",
+  "documents": {
+    "1_Reviewer_Responses_R2.docx": {
+      "sha256": "e70b133bed7e9b9fa34934ec234e17e04d5289a8af649b012b7f6cc9e5fbd506",
+      "pages": 12,
+      "text_outside_page": []
+    },
+    "2_Manuscript_R2.docx": {
+      "sha256": "b1adf93854fb54563ada16692974724eccd4a339aa8b821bbca507e35810ebdb",
+      "pages": 17,
+      "text_outside_page": []
+    },
+    "2b_Manuscript_R2_Clean.docx": {
+      "sha256": "d04945d49190ad757969ef8caeb65cb27cf7c851a8a49cdda8a22f2feff04327",
+      "pages": 17,
+      "text_outside_page": []
+    },
+    "3_Tables_R2.docx": {
+      "sha256": "0d7dad39fc3657c0c5b41afefc3906a5b934eecb92c0fcaacd47dc45a6717a4e",
+      "pages": 2,
+      "text_outside_page": []
+    },
+    "4_Supplementary_R2.docx": {
+      "sha256": "f6ba0a15e3bbdcb5233148158e84b6659895e8a5cae6dfc68464f6e51c182671",
+      "pages": 23,
+      "text_outside_page": []
+    },
+    "5_STROBE_Checklist_R2.docx": {
+      "sha256": "92d48063560655ed87ce19c95112a0d6300f758d49accccdc56bee191746a8e2",
+      "pages": 2,
+      "text_outside_page": []
+    }
+  },
+  "manual_page_or_section_breaks_added": false
+}
