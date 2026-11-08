@@ -1,0 +1,9 @@
+﻿Input scale,Correlation,Largest cluster size,Best Jaccard vs fixed Cluster 1,Bootstrap Jaccard for largest cluster
+raw,pearson,13,1.00,0.90
+raw,spearman,13,0.73,0.89
+log10,pearson,11,0.85,0.88
+log10,spearman,13,0.73,0.89
+relative,pearson,3,0.23,0.73
+relative,spearman,4,0.31,0.67
+clr,pearson,3,0.23,0.81
+clr,spearman,6,0.27,0.89

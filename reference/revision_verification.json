@@ -1,0 +1,31 @@
+{
+  "participants": 102,
+  "group_counts": {
+    "0": 72,
+    "1": 30
+  },
+  "group_definition_confirmed_by_author": "self-reported complaint and sex-specific VSC reference criterion",
+  "labels_changed": false,
+  "vsc_only_positive": 36,
+  "vsc_only_positive_primary_negative": 6,
+  "primary_positive_below_vsc_reference": 0,
+  "vsc_sum_mismatches": 0,
+  "missing_analysis_values": {},
+  "panel_total_welch_p": 0.0117653247693172,
+  "raw_pearson_largest_cluster_sizes": {
+    "0.3": 15,
+    "0.4": 13,
+    "0.5": 11,
+    "0.6": 10
+  },
+  "public_workbook_sha256": "75ad27c513f2705fe893f14be6535a3c8e67de7ab6150251024bcb18cbfcfc5f",
+  "public_repository_commit": "51a1e0ad7f8506cd2e537644bf8ae6535a2d5b7c",
+  "predictive_source": "Supplied Supplementary Tables 3, 4 and 13; plotted values retain their reported precision",
+  "predictive_models_refitted_in_this_finalization": false,
+  "adjusted_association_check": {
+    "optional_statsmodels_available": true,
+    "association_rows": 12,
+    "firth_implemented": false,
+    "requested_binary_association_method": "logit"
+  }
+}

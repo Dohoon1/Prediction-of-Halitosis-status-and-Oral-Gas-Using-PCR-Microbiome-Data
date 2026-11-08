@@ -1,0 +1,4 @@
+﻿Definition,Log10 mean difference (95% CI),Cliff’s delta (95% CI),Welch Bonferroni p,Mann–Whitney Bonferroni p
+Primary definition (complaint + VSC reference criterion),2.25 (1.36 to 3.15),0.58 (0.37 to 0.77),<0.0001,<0.0001
+Sex-specific upper-quartile VSC criterion,1.98 (0.94 to 2.91),0.51 (0.28 to 0.73),0.0008,0.0002
+VSC-only reference criterion (exploratory),2.04 (1.08 to 2.93),0.51 (0.29 to 0.70),0.0001,<0.0001

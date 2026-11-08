@@ -1,0 +1,13 @@
+﻿Outcome,Model,Training-fold value,Fixed value,Difference (95% CI),Two-sided p,Holm p
+Halitosis,Cluster 1,0.62,0.62,-0.00 (-0.04 to 0.04),0.9697,1.0000
+Halitosis,Cluster 2,0.52,0.53,0.01 (-0.01 to 0.04),0.3202,0.9605
+Halitosis,Cluster 1 score,0.62,0.60,-0.01 (-0.03 to 0.01),0.1723,0.6891
+H2S,Cluster 1,-1.70,-0.50,1.19 (-0.04 to 6.18),0.4737,1.0000
+H2S,Cluster 2,-0.14,-1.43,-1.28 (-6.51 to -0.00),0.2106,1.0000
+H2S,Cluster 1 score,-0.02,-0.02,0.00 (-0.00 to 0.01),0.1730,1.0000
+CH3SH,Cluster 1,-1.90,-0.30,1.60 (-0.06 to 7.70),0.4158,1.0000
+CH3SH,Cluster 2,-0.13,-2.00,-1.87 (-8.94 to -0.00),0.2089,1.0000
+CH3SH,Cluster 1 score,0.01,0.01,0.00 (-0.00 to 0.01),0.0858,0.7721
+Total VSC,Cluster 1,-1.74,-0.47,1.27 (-0.03 to 6.51),0.4677,1.0000
+Total VSC,Cluster 2,-0.15,-1.54,-1.39 (-7.04 to -0.00),0.2112,1.0000
+Total VSC,Cluster 1 score,-0.02,-0.01,0.00 (-0.00 to 0.01),0.1534,1.0000

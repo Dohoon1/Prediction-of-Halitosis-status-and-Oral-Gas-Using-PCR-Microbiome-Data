@@ -1,0 +1,13 @@
+﻿Scale,Species pair,Partial r,p,BH p
+raw,P. gingivalis / C. rectus,0.37,0.0001,0.0007
+raw,P. gingivalis / E. nodatum,0.48,<0.0001,<0.0001
+raw,C. rectus / E. nodatum,0.18,0.0673,0.1616
+log10,P. gingivalis / C. rectus,0.24,0.0143,0.0938
+log10,P. gingivalis / E. nodatum,0.31,0.0017,0.0334
+log10,C. rectus / E. nodatum,0.04,0.6847,0.8450
+relative,P. gingivalis / C. rectus,0.20,0.0478,0.3017
+relative,P. gingivalis / E. nodatum,-0.11,0.2683,0.4953
+relative,C. rectus / E. nodatum,-0.17,0.0813,0.3704
+clr,P. gingivalis / C. rectus,0.05,0.6125,0.7656
+clr,P. gingivalis / E. nodatum,0.21,0.0386,0.1715
+clr,C. rectus / E. nodatum,-0.13,0.1964,0.3661

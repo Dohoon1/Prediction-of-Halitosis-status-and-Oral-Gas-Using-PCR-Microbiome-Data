@@ -1,0 +1,540 @@
+[
+  {
+    "table": "Table1",
+    "file": "tables/main_Table1.csv",
+    "source_document": "3_Tables_R2.docx",
+    "source_table_index_zero_based": 0,
+    "rows_including_header": 16,
+    "columns": 5,
+    "preceding_caption_and_notes": [
+      "Table 1. Demographic characteristics, oral gas concentrations, and panel-based microbial diversity according to VSC-confirmed halitosis status"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "1610b8085acc8ae0e7b045be07a1c23aec1d0c52dc5f9d0dbe14d4ca7a7a9be6"
+  },
+  {
+    "table": "Table2",
+    "file": "tables/main_Table2.csv",
+    "source_document": "3_Tables_R2.docx",
+    "source_table_index_zero_based": 1,
+    "rows_including_header": 24,
+    "columns": 11,
+    "preceding_caption_and_notes": [
+      "Data are presented as mean ± SD or n (%).",
+      "a Continuous variables were compared using Welch’s t-test. b Categorical variables were compared using the χ2 test or Fisher’s exact test, as appropriate",
+      "Adjusted P values are shown only for the three panel-diversity indices. Bonferroni correction covers these three indices separately within each test. Clinical and gas comparisons are unadjusted. Richness is the number of detected targets; Shannon uses natural logarithms, and evenness is H/ln(S). Welch and Mann–Whitney U (MW) results are reported separately for panel diversity.",
+      "H2S, hydrogen sulfide; CH3SH, methyl mercaptan; VSCs (H2S + CH3SH), volatile sulfur compounds.",
+      "The primary cohort comprises 102 participants: 30 with a complaint and sex-specific VSC confirmation and 72 in the comparison group, including six with elevated VSC but no complaint.",
+      "Table 2 Selected linear and Transformer models for primary halitosis classification and oral gas prediction"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "ff807a6489cdcc365e8ba4d49b3d7a983b7b1706947fa57570e4ac8528d350b2",
+    "following_notes": [
+      "Primary classification uses the original 30/72 labels (N = 102). All non-Dummy models include age, sex, smoking and oral hygiene. Linear classification uses L2-regularized logistic regression; linear gas prediction uses Ridge regression. Dummy prevalence uses no predictors. Gas rows show the best observed species or cluster for each framework and the nested linear selector; their ranking is descriptive.",
+      "Linear values average repetition-specific pooled OOF metrics from outer 5-fold CV repeated ten times with inner 3-fold selection. AUROC and R2 show 95% percentile CIs from 10,000 participant bootstrap resamples, retaining repeated predictions together and holding predictions fixed. These intervals exclude refitting and selection uncertainty and are not multiplicity-adjusted. Sens. denotes sensitivity and Spec. denotes specificity; these metrics and F1 use a threshold of 0.50. Brier is the mean squared probability error; lower values are better.",
+      "Transformer AUROC and R2 cells show mean ± SD across three training seeds under the same main CV conditions. Other Transformer columns show seed means. Seed SDs are distinct from participant-bootstrap CIs and do not measure external validation uncertainty. The largest cluster is defined within training folds; its score averages log10(copies/mL + 1). The nested selector chooses one species and its regularization parameter within inner CV. Negative R2 denotes performance below the evaluation-set mean reference. Total VSC = H2S + CH3SH. Complete linear results and training-mean references appear in Supplementary Table 2; all 19 Transformer configurations appear in Supplementary Table 8. AUROC, area under the ROC curve; CI, confidence interval; CV, cross-validation; MAE, mean absolute error; OOF, out-of-fold; RMSE, root mean squared error."
+    ],
+    "section_rows": [
+      {
+        "row_index": 1,
+        "label": "Binary halitosis classification",
+        "spans": 11
+      },
+      {
+        "row_index": 12,
+        "label": "Gas prediction",
+        "spans": 11
+      }
+    ],
+    "layout_note": "Task values are represented by full-width section rows. All 21 data records and numerical estimates are retained; Outcome remains a column."
+  },
+  {
+    "table": "S1",
+    "file": "tables/supplement_S1.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 0,
+    "rows_including_header": 18,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Supplementary material",
+      "Supplementary Tables 1–8 and Supplementary Figures 1–3",
+      "Supplementary Table 1 PCR concentrations of all 16 targeted salivary species by primary halitosis status"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "505affab4324c59911022fdd4b858f08543845568e2fe4a8c2a7dc1b07a630bb"
+  },
+  {
+    "table": "S2A",
+    "file": "tables/supplement_S2A.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 1,
+    "rows_including_header": 23,
+    "columns": 10,
+    "preceding_caption_and_notes": [
+      "Concentrations are copies/mL, shown as mean ± SD. Direction compares raw group means. P values are two-sided Welch tests on raw concentrations; Bonferroni correction covers the 16 species, including L. casei. The displayed total is the sum of the 16 PCR targets (Welch P = 0.0118). Transformed-scale species analyses appear in Supplementary Table 3. F. alocis corresponds to the historical assay name Fusobacterium alocis.",
+      "Supplementary Table 2 Complete linear model performance and permutation analyses",
+      "A Halitosis classification"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "83e55a1176ad2c6bc7a1f718171a4a8a267cd058377413969362660798cde531"
+  },
+  {
+    "table": "S2B",
+    "file": "tables/supplement_S2B.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 2,
+    "rows_including_header": 67,
+    "columns": 8,
+    "preceding_caption_and_notes": [
+      "Performance is the mean of ten repetition-specific pooled out-of-fold (OOF) metrics from outer 5-fold cross-validation repeated ten times, with three inner folds. SD across repetitions and SD across the 50 individual test folds are distinct. The 95% confidence intervals (CIs) use 10,000 participant bootstrap resamples that keep repeated predictions together and hold fitted predictions fixed; preprocessing, selection and fitting are not repeated. All 22 model specifications are shown: clinical-only, 16 single species, two clusters, the Cluster 1 score, Dummy and the nested best-species selector. Brier score is the mean squared error of predicted probabilities; lower is better. Class weighting without oversampling is evaluated separately in Supplementary Table 5. All bacterial models and the nested selector include age, sex, smoking and oral hygiene; Dummy uses no predictors. Single-species and cluster models use raw copies/mL, standardized within training folds. The Cluster 1 score is the mean log10(copies/mL + 1) across species in the largest training-defined cluster. The nested selector chooses one species and its hyperparameter using inner CV only. Clusters are redefined within every inner and outer training fold; their membership need not match the fixed 13-species descriptive Cluster 1. If a requested cluster is absent, the recorded fallback uses clinical predictors only. AUROC, area under the receiver operating characteristic curve; OOF, out-of-fold; CI, confidence interval; SD, standard deviation. CIs hold saved predictions fixed and are not adjusted for selecting the best observed model.",
+      "B Continuous oral gas prediction"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "6d481618883d6cb77f3a7f22ee748f6c70e7e4e75698860b12503acd5701a476"
+  },
+  {
+    "table": "S2C",
+    "file": "tables/supplement_S2C.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 3,
+    "rows_including_header": 6,
+    "columns": 5,
+    "preceding_caption_and_notes": [
+      "All 22 Ridge specifications per gas are shown. Metrics are means across ten repetitions of pooled outer 5-fold OOF predictions, with inner 3-fold tuning. Repeat SD and fold SD describe different variability. The 95% participant-bootstrap CIs retain each participant’s repeated predictions and hold fitted predictions fixed. Conventional R2 uses the evaluation-set mean; training-mean OOF R2 uses the matched outer training-fold mean reference. ΔR2 is relative to clinical-only Ridge.  Non-Dummy models include age, sex, smoking and oral hygiene. Species and cluster inputs are raw copies/mL with training-fold standardization. The cluster score averages log10(copies/mL + 1) across its training-defined members. The selector chooses a species and regularization setting within inner CV. Gas targets are raw ppb; log-target sensitivities are in Supplementary Table 5 and model settings are described in Methods 2.4–2.6. Total VSC = H2S + CH3SH.",
+      "C Maximum model performance under outcome permutation"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "c7cbf17a11db790f08429b352f0a81067dc54e872cbbb84e6a33aeb7febf7a41"
+  },
+  {
+    "table": "S2D",
+    "file": "tables/supplement_S2D.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 4,
+    "rows_including_header": 8,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "A. Each of 100 label permutations repeats preprocessing, training-fold cluster definition, model tuning and fitting. Observed and null scores both use outer 5-fold × 2 repeats and inner 3-fold CV. Classification is re-stratified after each shuffle. Dummy models are excluded from maxima. AUROC and R2 are assessed separately by outcome, with an additional R2 maximum across all three gases. These tests address overall outcome–input association, not PCR contribution conditional on clinical inputs. The primary main-analysis metrics use ten repetitions, not two.",
+      "D Selected individual model permutation results"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "8faf9712658c2b3f0b7ca7bdd08e3bc1d2c6e60b1287610b11038a06c9c6fcde"
+  },
+  {
+    "table": "S3",
+    "file": "tables/supplement_S3.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 5,
+    "rows_including_header": 49,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Upper-tail P = (exceedances or ties + 1)/(100 + 1). For classification, family-wise P compares with the maximum over 21 non-Dummy linear specifications. For gas models, the main adjusted P compares with the maximum across 63 non-Dummy specifications over all three gases; within-gas values use 21. The minimum attainable P is 1/101, so Monte Carlo precision is limited. The reported permutation inference covers the linear candidates.",
+      "Supplementary Table 3 Species effects on log concentration and within panel normalization scales"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "9688b432552053a45419c754d55bda7c08a6c000f32b7a20cd961eee99762338"
+  },
+  {
+    "table": "S4A",
+    "file": "tables/supplement_S4A.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 6,
+    "rows_including_header": 9,
+    "columns": 5,
+    "preceding_caption_and_notes": [
+      "Differences are halitosis minus non-halitosis. Each test column lists raw p / Bonferroni p / BH p; correction is across all 16 species separately within each scale and test. Effect CIs use 2,000 participant bootstrap resamples within groups. Cliff’s delta is a rank effect size; positive values indicate larger concentrations or transformed values in halitosis. Raw concentrations are copies/mL; relative abundance divides each species by the 16-species sum; CLR is ln(x + 1 copy/mL) minus the panel mean log value. Natural and base-10 logarithms are distinguished. These are group-association analyses, not model performance estimates. Raw group means, SDs and raw Welch tests are retained in Supplementary Table 1.",
+      "Supplementary Table 4 Correlation and cluster robustness",
+      "A Input scale and correlation sensitivity"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "490d47324f7628f18320f605b693dccae0719e969563a7f2d98500daf7da3a09"
+  },
+  {
+    "table": "S4B",
+    "file": "tables/supplement_S4B.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 7,
+    "rows_including_header": 5,
+    "columns": 3,
+    "preceding_caption_and_notes": [
+      "A. Descriptive connected-component clusters use r > 0.4. Jaccard is shared species divided by the union; the best value may correspond to a smaller cluster. Bootstrap stability uses 100 resamples within each method and is not evidence of robustness across normalization methods. The raw full-dataset Cluster 1 has 13 species.",
+      "B Raw Pearson cutoff sensitivity"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "2445812b0353737ff2f1d5049eb0c67563ee20fff9f985f4f62b84cd118cf15c"
+  },
+  {
+    "table": "S4C",
+    "file": "tables/supplement_S4C.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 8,
+    "rows_including_header": 13,
+    "columns": 7,
+    "preceding_caption_and_notes": [
+      "Cutoffs are 0.3, 0.4, 0.5 and 0.6. A connected component joins species through direct or indirect correlation paths; it does not require every species pair to exceed the cutoff.",
+      "C Fixed minus training fold performance comparisons"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "ad6ea43535cf1cbb4f1e7eeaed4aaafa730d9b113822debd53c2199f9714b46f"
+  },
+  {
+    "table": "S5A",
+    "file": "tables/supplement_S5A.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 9,
+    "rows_including_header": 3,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Differences are fixed minus training-fold. Classification uses AUROC; regression uses raw-ppb R2. Paired participant bootstrap uses 10,000 draws holding saved predictions fixed. Approximate two-sided p compares |bootstrap difference − observed difference| with |observed difference|, with +1 correction. Holm correction retains five planned AUROC comparisons (including the two weighting comparisons in Supplementary Table 5A) or nine gas R2 comparisons separately. Percentile CIs and these approximate tests need not give inverse decisions for skewed distributions. Non-significance does not establish equivalence.",
+      "Supplementary Table 5 Sensitivity to imbalance handling gas transformation and outcome definition",
+      "A Balanced class weights versus SMOTENC"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "21ca8ced694e9d803b91fdc0413827a6dcc47728d30bfa4a0f6292ffd7059a73"
+  },
+  {
+    "table": "S5B",
+    "file": "tables/supplement_S5B.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 10,
+    "rows_including_header": 10,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Balanced class weights replace SMOTENC; both analyses retain training-defined clusters. Differences are weighting minus SMOTENC. The two displayed tests belong to the same five-comparison Holm family as the three classification cluster-definition tests in Supplementary Table 4C. No equivalence conclusion follows from a non-significant p.",
+      "B Gas models refitted with log1p targets"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "3baf7f6b0458c2721656c97967cb981c90bfa17abfc3020b21d026b928affa65"
+  },
+  {
+    "table": "S5C",
+    "file": "tables/supplement_S5C.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 11,
+    "rows_including_header": 4,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "The target is ln(1 + y), where y is concentration in ppb; +1 permits zero values. Predictions are inverse transformed with exp(prediction) − 1 for ppb metrics. The best observed non-Dummy model is selected descriptively within each gas; the clinical-only and nested selector results are also shown. These models use the same outer 5-fold × 10 repeats and inner 3-fold design.",
+      "C Alternative outcome definitions"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "660d87274e0f69496e6814f1c4a3d2e4a34a38def005bdb1b896649c433ed423"
+  },
+  {
+    "table": "S5D",
+    "file": "tables/supplement_S5D.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 12,
+    "rows_including_header": 4,
+    "columns": 5,
+    "preceding_caption_and_notes": [
+      "The primary definition requires a self-reported complaint and total VSC ≥65.79 ppb for women or ≥79.94 ppb for men; the original 30/72 labels are retained. The VSC-only reference criterion, applied without the complaint requirement, identifies 36 positives and 66 negatives; six primary comparison participants meet this VSC-only criterion. Its species association is shown descriptively, and prediction CV was not conducted for that definition. The separate sex-specific upper-quartile VSC criterion (≥108.5 ppb for women and ≥187.0 ppb for men) identifies 26 positives and 76 negatives. Five primary positives fall below it and one primary negative meets it. Classification CV was re-stratified for the upper-quartile definition. These alternative VSC criteria are exploratory and do not establish validated diagnostic thresholds. Repeat VSC measurements were unavailable for reliability assessment.",
+      "D E nodatum associations across outcome definitions"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "f12129b4a0df32bcccd31d96da3572415c0b72b596247fd912f80ae4347f5176"
+  },
+  {
+    "table": "S6",
+    "file": "tables/supplement_S6.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 13,
+    "rows_including_header": 13,
+    "columns": 7,
+    "preceding_caption_and_notes": [
+      "Mean differences are on log10(copies/mL + 1), positive minus negative. The primary-definition effect estimate and its 2,000-resample within-group bootstrap intervals are repeated from Supplementary Table 3 for consistency. Alternative-definition intervals also use 2,000 participant resamples within groups. P-value correction covers one selected species across the three distinct definitions. This family differs from the main 16-species correction in Supplementary Table 3.",
+      "Supplementary Table 6 Bacterial associations adjusted for available clinical variables"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "2bbfbecd0e47c7d0c31f3f2bfc703ef81b10a8cafd3156cb8ec832cb792139d6"
+  },
+  {
+    "table": "S7A",
+    "file": "tables/supplement_S7A.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 14,
+    "rows_including_header": 17,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Models adjust for age, sex, smoking and oral hygiene. The species predictor is log10(copies/mL + 1). Binary associations use unweighted conventional logistic regression and Wald intervals; these are not Firth regressions and do not use SMOTENC. Gas associations use OLS for ln(1 + ppb) with HC3 robust standard errors. BH correction covers the three examined species separately within each outcome. These full-data association estimates are distinct from nested-CV prediction performance. Separate periodontal measurements, probing depth, bleeding on probing, tongue coating and salivary flow were unavailable for the present models.",
+      "Supplementary Table 7 Paired comparisons of linear model performance",
+      "A Paired participant bootstrap differences relative to clinical only"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "67f0e390a9b9ed929bf9e0518232c97ae166413ff4806f7b2b72e2f6587cb561"
+  },
+  {
+    "table": "S7B",
+    "file": "tables/supplement_S7B.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 15,
+    "rows_including_header": 6,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Differences are model minus the matched clinical-only model. CIs use 10,000 paired participant bootstrap resamples that keep all repetitions and both models together; classification resampling preserves class counts. These are unadjusted percentile CIs conditional on saved OOF predictions, not DeLong p values. Selected rows summarize the strongest observed species models, clusters and the score; selector-versus-clinical paired CIs were not available and are not shown. Selection of rows does not make these selection-corrected estimates. Complete model results appear in Supplementary Table 2. Class-weighting and cluster-definition p values with their declared Holm families appear in Supplementary Tables 4 and 5.",
+      "B H2S absolute prediction errors"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "44f4eafa90eb4b23240d1b8f7c3922c183a557b3d7b3e7fd57536fe5f97c03a1"
+  },
+  {
+    "table": "S7C",
+    "file": "tables/supplement_S7C.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 16,
+    "rows_including_header": 6,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Friedman test across all 22 models: statistic 203.87, p <0.0001.",
+      "C CH3SH absolute prediction errors"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "e1b37ed277ecd34de74d9224cf5df37190db4f9730535cd0af0040c3a90957c8"
+  },
+  {
+    "table": "S7D",
+    "file": "tables/supplement_S7D.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 17,
+    "rows_including_header": 6,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "Friedman test across all 22 models: statistic 244.71, p <0.0001.",
+      "D Total VSC absolute prediction errors"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "3172ee7ceffa4ddc30b364b83d96ee229fef91cf4a13a950b492ac3e95bd377a"
+  },
+  {
+    "table": "S8A",
+    "file": "tables/supplement_S8A.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 18,
+    "rows_including_header": 20,
+    "columns": 8,
+    "preceding_caption_and_notes": [
+      "Friedman test across all 22 models: statistic 168.60, p <0.0001.",
+      "Cells show Holm-adjusted two-sided Wilcoxon signed-rank p values for absolute prediction errors in ppb, not R2 differences. Each participant contributes one error per model, obtained by averaging absolute outer-test errors over ten repetitions (n = 102 paired observations). The displayed five non-Dummy models are selected by repeated OOF R2 within each gas. The Holm correction remains over all 231 pairs among all 22 evaluated models within that gas; it was not recalculated for this display subset. The Friedman results also use all 22 models. Gas-specific column headings match each matrix. H2S, hydrogen sulfide; CH3SH, methyl mercaptan; total VSC = H2S + CH3SH.",
+      "Supplementary Table 8 Complete Transformer model performance across three training seeds",
+      "Transformer values are means across three training seeds. SDs describe seed variation under the main analysis conditions (outer 5-fold × 10-repeat CV; inner 3-fold CV). Each single-species and cluster model includes age, sex, smoking and oral hygiene. The 19 configurations comprise clinical-only, 16 single-species and two cluster models. Participant-level Transformer predictions were unavailable for paired inference. AUROC and R2 means are displayed to two decimals and seed SDs to three decimals.",
+      "A Primary halitosis classification"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "f0c0f53c250c9c98a5dfd8d44ef207ef84cb41d75eec173c3780e2c7c5471477"
+  },
+  {
+    "table": "S8B",
+    "file": "tables/supplement_S8B.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 19,
+    "rows_including_header": 20,
+    "columns": 4,
+    "preceding_caption_and_notes": [
+      "All metric cells show mean ± SD across three training seeds. The observed ranking is descriptive and does not constitute a paired comparison or selection-adjusted validation.",
+      "B H2S prediction"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "2a6ed8dbf071dbfac65126e888a689ab9d77a82ad14f68f7231f0a14753f714b"
+  },
+  {
+    "table": "S8C",
+    "file": "tables/supplement_S8C.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 20,
+    "rows_including_header": 20,
+    "columns": 4,
+    "preceding_caption_and_notes": [
+      "All metric cells show mean ± SD across three training seeds. The observed ranking is descriptive and does not constitute a paired comparison or selection-adjusted validation.",
+      "C CH3SH prediction"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "48cd840e71f0c1be23b01e116f14b05c9086b2951333580d689fb69c62743523"
+  },
+  {
+    "table": "S8D",
+    "file": "tables/supplement_S8D.csv",
+    "source_document": "4_Supplementary_R2.docx",
+    "source_table_index_zero_based": 21,
+    "rows_including_header": 20,
+    "columns": 4,
+    "preceding_caption_and_notes": [
+      "All metric cells show mean ± SD across three training seeds. The observed ranking is descriptive and does not constitute a paired comparison or selection-adjusted validation.",
+      "D Total VSC prediction"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "7773c8b4218453a054570f63b46fd0ea70515e8d06fa10a9928af89e49aa7a8d",
+    "following_notes": [
+      "All metric cells show mean ± SD across three training seeds. The observed ranking is descriptive and does not constitute a paired comparison or selection-adjusted validation.",
+      "Supplementary Figures 1–3",
+      "The figures retain gas distributions, participant-level 16-target composition and the enlarged performance panels. All primary-group figures use the combined complaint and VSC definition. Paired linear-model error comparisons appear in Supplementary Table 7.",
+      "Supplementary Figure 1 Distribution of measured oral sulfur gases by primary halitosis status",
+      "Boxes show the median and interquartile range, whiskers extend to observations within 1.5 interquartile ranges, and points show participants. Values are raw ppb. The primary halitosis definition requires a complaint and total VSC at or above the sex-specific reference value. P values are two-sided unadjusted Welch tests on raw concentrations, matching Table 1. Total VSC = H2S + CH3SH.",
+      "Supplementary Figure 2 Participant-level concentrations of the 16 targeted bacterial species",
+      "Stacked bars show the raw concentrations of the 16 PCR targets for each participant, with the vertical axis expressed in million copies/mL. Participants retain their source-data order within each primary group. Colors identify the 16 species. The primary definition requires a self-reported complaint and sex-specific VSC confirmation.",
+      "Supplementary Figure 3A All predictive configurations for VSC-confirmed halitosis",
+      "Green circles show the 22 linear specifications with participant-bootstrap 95% CIs, conditional on saved repeated OOF predictions. Orange squares show the 19 Transformer configurations with SD across three training seeds. All non-Dummy models include the four clinical variables. Arrowheads show estimates or CI limits outside the displayed range. The row order follows the observed linear classification AUROC. Full numerical values are in Supplementary Tables 2 and 8. Differences between architectures are descriptive.",
+      "Supplementary Figure 3B All predictive configurations for H2S",
+      "Green circles show the 22 linear specifications with participant-bootstrap 95% CIs, conditional on saved repeated OOF predictions. Orange squares show the 19 Transformer configurations with SD across three training seeds. All non-Dummy models include the four clinical variables. Arrowheads show estimates or CI limits outside the displayed range. The row order follows the observed linear classification AUROC. Full numerical values are in Supplementary Tables 2 and 8. Differences between architectures are descriptive.",
+      "Supplementary Figure 3C All predictive configurations for CH3SH",
+      "Green circles show the 22 linear specifications with participant-bootstrap 95% CIs, conditional on saved repeated OOF predictions. Orange squares show the 19 Transformer configurations with SD across three training seeds. All non-Dummy models include the four clinical variables. Arrowheads show estimates or CI limits outside the displayed range. The row order follows the observed linear classification AUROC. Full numerical values are in Supplementary Tables 2 and 8. Differences between architectures are descriptive.",
+      "Supplementary Figure 3D All predictive configurations for Total VSC",
+      "Green circles show the 22 linear specifications with participant-bootstrap 95% CIs, conditional on saved repeated OOF predictions. Orange squares show the 19 Transformer configurations with SD across three training seeds. All non-Dummy models include the four clinical variables. Arrowheads show estimates or CI limits outside the displayed range. The row order follows the observed linear classification AUROC. Full numerical values are in Supplementary Tables 2 and 8. Differences between architectures are descriptive."
+    ]
+  },
+  {
+    "table": "A1",
+    "file": "tables/response_A1.csv",
+    "source_document": "1_Reviewer_Responses_R2.docx",
+    "source_table_index_zero_based": 0,
+    "rows_including_header": 24,
+    "columns": 2,
+    "preceding_caption_and_notes": [
+      "Response to Reviewers",
+      "Oral Diseases | Manuscript 1476309",
+      "Salivary Bacterial Signals of Objective Halitosis and Oral Gas Burden",
+      "Dear Professor Petti,",
+      "Thank you for the opportunity to revise our manuscript and for the thoughtful, detailed comments from Reviewers 1 and 2. We have taken these suggestions very seriously. In preparing this revision, we re-examined the entire experimental and analytical workflow and repeated the relevant statistical and predictive analyses to address the reviewers’ concerns as thoroughly as possible.",
+      "For transparency, reliability and reproducibility, we have made the updated de-identified dataset and analysis code publicly available at https://github.com/Dohoon1/Prediction-of-Halitosis-status-and-Oral-Gas-Using-PCR-Microbiome-Data (repository commit 51a1e0ad7f8506cd2e537644bf8ae6535a2d5b7c). The revised manuscript, tables, figures and supplementary material now use a consistent cohort definition and reporting framework. We have clarified the limitations of the outcome definition, recalculated the targeted-panel statistics, expanded the validation and sensitivity analyses, and moderated the clinical interpretation of the models.",
+      "The authors discussed the reviewers’ comments and successive versions of the revision on multiple occasions and devoted their best efforts to strengthening the work. The supplementary material retains eight tables and three figures; detailed methodological settings and additional technical checks are included below in the response appendix. Main Table 2 has been consolidated into one editable table. Revised passages are shown in blue in the marked manuscript, and the clean manuscript contains the same final text.",
+      "We sincerely hope that the substantial revisions will now make the manuscript suitable for publication in Oral Diseases. Below, we reproduce each comment from Reviewers 1 and 2 and provide a point-by-point response.",
+      "Reviewer 1",
+      "Comment 1",
+      "The clinical-only baseline is below chance, which undermines every “added bacterial signal” claim. The clinical-only logistic model yields AUROC 0.430 ± 0.056 with sensitivity 0.000 and specificity 0.929 (Table 2; Supplementary Table 2), and the clinical-only Transformer is lower still (0.406). An AUROC meaningfully below 0.5 across cross-validation folds is not a neutral reference point — it signals a mis- specified or mis-calibrated model (the classifier is assigning essentially everyone to the majority non- halitosis class). Because the headline gains are reported as ΔAUROC “vs clinical-only” (e.g., +0.183 for E. nodatum), and the gas gains as ΔR2 against strongly negative baselines (e.g., +0.438 where the clinical-only R2 is −0.280), the reported improvements are measured against a broken reference and are therefore not interpretable as the bacterial contribution. Please diagnose why the baseline underperforms chance, and replace it with a sensible reference (a prevalence/Dummy classifier, and a properly calibrated clinical model). The “bacterial signal” conclusions should be re-evaluated against that corrected baseline.",
+      "Response",
+      "We rebuilt the clinical-only baseline with L2-regularized logistic regression in repeated nested CV (outer 5-fold × 10 repeats; inner 3-fold), fitting preprocessing and SMOTENC within training folds. The revised clinical-only AUROC was 0.53 (95% CI 0.43–0.63), sensitivity 0.55 and specificity 0.51. The earlier zero sensitivity was not reproduced. Several procedures changed together, so the earlier result cannot be attributed to one verified cause. A prevalence Dummy was added. Its pooled AUROC was 0.49; its predictions were constant within a fold (within-fold AUROC 0.50), while training prevalence varied slightly across folds. Adding E. nodatum yielded AUROC 0.66 (95% CI 0.54–0.76) and an exploratory paired increment of 0.13 (95% CI 0.04–0.22). These intervals condition on saved predictions and are unadjusted for selecting the best observed species. Class weighting gave corresponding AUROCs of 0.52 and 0.68. Brier scores were 0.26 for clinical-only, 0.23 with E. nodatum and 0.21 for the Dummy, leaving probability calibration and clinical utility unestablished. Gas results include training-mean-referenced R2 alongside conventional R2, qualifying improvements over negative clinical baselines.",
+      "Revised locations — Methods 2.5–2.6; Results 3.3–3.4; Table 2; Supplementary Tables 2, 5 and 7.",
+      "Comment 2",
+      "Model selection is subject to a winner’s curse, and the selected “signals” are within noise. The study fits roughly sixteen single species × two architectures across one classification and three gas outcomes, plus cluster models — dozens of models in total — and then reports E. nodatum (classification) and P. gingivalis (gas) as the strongest signals. The authors’ own DeLong comparisons show no model significantly outperforms any other (smallest p = 0.064; Supplementary Table 5), and the best gas model changes by gas and by architecture (Supplementary Table 3). Reporting the performance of post hoc winners overstates the true effect. The Abstract’s “explained 18.6%, 24.2%, and 20.7%” selects the single best model per gas from a set in which most models had negative R2. Please (i) foreground that no model is statistically distinguishable from the others, (ii) report the full distribution rather than the winners in the Abstract, and (iii) consider a nested selection or correction that accounts for the number of models evaluated.",
+      "Response",
+      "We now display all 22 linear specifications and all 19 reported Transformer configurations per outcome in Figure 3 and enlarged Supplementary Figure 3. The Abstract reports the full observed linear gas-performance range and the nested-selector results. Linear R2 ranged from −1.71 to 0.17 for H2S, −2.41 to 0.15 for CH3SH and −1.83 to 0.18 for total VSC. Nested gas selectors achieved −0.06, −0.02 and −0.05, and the 95% CIs of all three best observed Ridge estimates included zero. The classification selector achieved AUROC 0.65 (95% CI 0.53–0.75) and selected E. nodatum in 47 of 50 outer fits. In a separate matched outer 5-fold × 2-repeat analysis, 100 outcome permutations reran preprocessing, selection and fitting. The E. nodatum classification model had family-wise P = 0.0396 across 21 non-Dummy linear candidates; the selector had P = 0.0594. The maximum R2 across all 63 non-Dummy linear gas candidates had P = 0.0297, while the three gas selectors had family-wise P = 0.6040, 0.2079 and 0.5347. These global tests include clinical inputs and do not isolate PCR contribution conditional on those inputs. We restrict that inference to the stated linear families and qualify model rankings as descriptive.",
+      "Revised locations — Abstract; Methods 2.4–2.6; Results 3.3–3.4; Figure 3; Supplementary Tables 2, 7 and 8; Supplementary Figure 3.",
+      "Comment 3",
+      "Thirty positive cases with 3-fold outer cross-validation cannot support this modeling program. With 30 halitosis cases and a 3-fold outer loop, each test fold contains roughly ten positives; nested CV with inner grid search on top of that is highly unstable, which the AUROC standard deviations (up to ±0.10) reflect. Transformer models at n = 102 with 30 positives are essentially guaranteed to overfit, and it is unsurprising they do not beat logistic regression. Reporting AUROC and R2 to three decimals overstates precision at this sample size. I would (i) add an explicit sample-size/power statement (STROBE item 10 currently points to pages with no power calculation), (ii) reduce decimal precision, and (iii) consider whether the deep-learning arm adds anything beyond complexity, or present it explicitly as a negative/underpowered result.",
+      "Response",
+      "(i) A sample-size statement was added. No a priori power calculation was performed because all eligible participants with paired saliva and VSC data were included. Each outer training fold contained 24 halitosis cases, giving approximately 6.0 events per predictor for the clinical-only model, 4.8 for single-species models and 1.3–1.5 for the largest-cluster model. This is stated in the Methods and Limitations, and the STROBE checklist was updated. To reduce the number of predictors, a single cluster score (mean log10 concentration of the cluster species) was added; it did not improve performance (AUROC 0.62, 95% CI 0.51–0.72). The outer loop was changed from 3-fold to 5-fold repeated 10 times. (ii) Performance means are now reported to two decimal places; three decimals are retained for the Transformer seed SDs to distinguish small seed variation. (iii) The Transformer models are presented as an exploratory comparison. Their reported mean performance did not exceed the leading linear estimates (best AUROC 0.65; best R2 0.06, 0.10 and 0.06), and this is stated as a negative result.",
+      "Revised locations — Methods 2.1 and 2.4–2.5; Discussion; Table 2; Supplementary Table 8; Response Table A1; STROBE item 10.",
+      "Comment 4",
+      "Compositionality and total-load normalization are not addressed. Total bacterial load was itself higher in the halitosis group (p = 0.012). If individual species counts are not normalized to total load, both the between-group species differences and the r > 0.4 correlation cluster may partly reflect overall sampling depth / DNA yield rather than compositional shifts — the 13-species “co-occurrence module” of uniformly positive correlations is exactly the pattern a shared load driver produces. Please clarify whether abundances were normalized, and show the species-level and clustering results on relative (or load-adjusted) abundance. Separately, the r > 0.4 clustering threshold is arbitrary; please justify it and show robustness to the cutoff.",
+      "Response",
+      "The primary predictive inputs were raw copies/mL with training-fold standardization. We added species tests and clustering analyses on log10, within-panel relative-abundance and CLR scales, together with partial correlations adjusted for the log-transformed 16-target sum. E. nodatum retained its association on relative and CLR scales (Welch Bonferroni P = 0.0061 and 0.00075). The largest normalized clusters contained three species, with best Jaccard similarity 0.23 to the original 13-species raw cluster. We therefore removed the interpretation of a normalization-robust coordinated module. We describe r > 0.4 as an exploratory reference and cite Akoglu (2018) for the variability of qualitative correlation-strength conventions. At strict thresholds of 0.3, 0.4, 0.5 and 0.6, the largest raw clusters contained 15, 13, 11 and 10 species. Hierarchical, partial-correlation and detailed training-fold membership checks are provided in Response Table A2. Predictive clustering is performed within each training split; its largest-cluster membership had mean Jaccard similarity 0.95 to the fixed reference. The comparison with fixed membership detected no adjusted performance difference, which does not establish equivalence. The panel sum contains the tested taxa and cannot substitute for an independent whole-community load measure.",
+      "Revised locations — Methods 2.4 and 2.6; Results 3.2; Discussion; Figure 2; Supplementary Tables 3–4; Response Table A2.",
+      "Comment 5",
+      "Statistical tests appear to be run on raw copy numbers despite heavy right-skew. Reported means (e.g., 1.25 × 106) with standard deviations exceeding the mean indicate strongly skewed distributions, yet the between-group tests are described as Welch’s t-tests while the figures are log-scaled. t-tests on raw copy numbers are not appropriate here; please test on the log scale (consistent with the figures) or use a non-parametric test, and confirm which scale produced the reported p-values. This directly affects the validity of the nominal species-level signals, including the E. nodatum result.",
+      "Response",
+      "The previous p values were from Welch's t-tests on raw copy numbers. Species comparisons are now performed on the log10(copies/mL + 1) scale with Welch's t-test and the Mann–Whitney U test, with Bonferroni and Benjamini–Hochberg correction across all 16 species. Raw means and Welch tests are retained in Supplementary Table 1; the additional raw-scale effect-size audit is in Response Table A3. For E. nodatum, the log-scale mean difference was 2.25 (95% CI 1.36–3.15), with Bonferroni-adjusted p < 0.001 for both tests and a Cliff's delta of 0.58 (95% CI 0.37–0.77). On the raw scale, the Bonferroni-adjusted p value was 0.06. The p values in Figure 2A were replaced with the log-scale Bonferroni-adjusted values. The corrected plot identifies E. nodatum, P. micra and F. alocis as significant at the adjusted 0.05 level.",
+      "Revised locations — Methods 2.6; Results 3.2; Figure 2A; Supplementary Tables 1 and 3; Response Table A3.",
+      "Comment 6",
+      "Outcome definition rests on a single-timepoint instrument measurement. Halitosis is defined solely by a single morning VSC reading, with no organoleptic (clinical gold-standard) score or tongue-coating assessment. The Discussion itself notes that mouth-air VSC levels vary temporally; that same point implies non-trivial outcome misclassification in the classification target. Please acknowledge this as a specific limitation of the outcome definition (not only of the panel) and, if any repeat measurements exist, report their consistency.",
+      "Response",
+      "The primary definition requires both a self-reported halitosis complaint and VSC at or above the sex-specific reference value. We clarified this combined criterion while retaining the original 30/72 labels. A single morning VSC reading was available for each participant; repeat readings and organoleptic scores were unavailable for the present analysis. Repeatability could therefore not be evaluated. We added the resulting risk of outcome misclassification to the Limitations. A separate upper-quartile VSC sensitivity criterion identified 26 positives (≥108.5 ppb for women; ≥187.0 ppb for men). The E. nodatum log-scale difference was 1.98 (95% CI 0.94–2.91), and Cliff’s delta was 0.51. The largest observed AUROC was 0.65 for the cluster score, with nested-selector AUROC 0.58. These cohort-relative VSC analyses assess sensitivity to outcome definition and do not validate a diagnostic cutoff.",
+      "Revised locations — Methods 2.2; Results 3.4; Discussion; Supplementary Table 5C–D.",
+      "Reviewer 2",
+      "Comment 1",
+      "Validity of the diagnostic criteria for halitosis The authors defined halitosis using sex-specific thresholds of 65.79 ppb for women and 79.94 ppb for men. However, these values appear to originate from the mean Halimeter readings reported by Kim et al. (2014), rather than diagnostic cutoffs validated against organoleptic assessments. Furthermore, the present study used the TwinBreasor II and calculated total VSCs as H2S + CH3SH. Halimeter readings and the sum of these two gas concentrations are not directly interchangeable because of differences in measurement principles and sensitivities to individual sulfur compounds. The authors should provide evidence supporting the diagnostic validity and cross-instrument applicability of these thresholds. If such evidence is unavailable, sensitivity analyses using appropriately justified alternative criteria should be considered. The interpretation of binary halitosis classification should also be revised accordingly.",
+      "Response",
+      "We agree that 65.79 ppb for women and 79.94 ppb for men were mean Halimeter readings in Kim et al. (2014), and that their diagnostic validity for the TwinBreasor II two-gas sum has not been established. The group definition has been clarified with the study team. The primary halitosis group required a self-reported complaint plus VSC at or above those reference values (n = 30); the remaining 72 participants formed the comparison group, including six above the VSC reference value who reported no complaint. The public dataset’s original labels were preserved. Supplementary Table 5 separates this primary definition from the VSC-only reference criterion (36 positives) and the cohort-specific upper-quartile VSC criterion (26 positives). The VSC-only row is a descriptive sensitivity audit. For the upper-quartile outcome, re-stratified nested CV yielded a largest observed AUROC of 0.65 and selector AUROC 0.58. We describe the reference values and cross-instrument limitation explicitly and present the gas concentrations as separate continuous outcomes.",
+      "Revised locations — Methods 2.2; Results 3.1 and 3.4; Discussion; Figure 1; Supplementary Table 5C–D.",
+      "Comment 2",
+      "Interpretation of individual VSCs and the absence of dimethyl sulfide measurements H2S and CH3SH are major contributors to intra-oral malodor, but their relative associations with tongue coating and periodontal disease may differ. Dimethyl sulfide (DMS) is also clinically relevant, particularly in blood-borne extra-oral halitosis, although recent evidence suggests that its concentration may also be influenced by oral microbial activity and systemic metabolic factors. The absence of DMS measurements does not invalidate the present study. However, the authors should clarify that their total VSC measurement represents only H2S + CH3SH and discuss the limitations of this definition. The authors should also indicate whether organoleptic assessment was performed. If not, the term \"VSC- defined halitosis\" may be more appropriate.",
+      "Response",
+      "Total VSC denotes the measured sum H2S + CH3SH, verified for every participant. Dimethyl sulfide was outside the measured panel, and this limitation is stated. Organoleptic scores were unavailable for the present analyses. We use VSC-confirmed halitosis for the combined complaint and gas-reference outcome throughout the analysis text, tables and figure legends. The original manuscript title is retained. Figure 1 and the group-comparison legends now state the combined criterion. Methods 2.2, Results 3.1, Table 1 and Supplementary Table 5C additionally identify the six comparison participants who met the VSC-only criterion but reported no complaint.",
+      "Revised locations — Abstract; Methods 2.2; Results 3.1; Discussion; Tables 1–2; Figures 1–3; Supplementary figure legends.",
+      "Comment 3",
+      "Validity of microbial diversity indices The reported microbial diversity indices require clarification. The study analyzed 16 targeted bacterial species, but Table 1 reports richness values of approximately 122 and Shannon indices exceeding 3.0. Observed species richness should not exceed 16, and the maximum Shannon index using natural logarithms would be ln(16) ≈ 2.77. The authors should clarify the definitions, calculations, logarithmic base, and underlying data used for these indices. The appropriateness of calculating Chao1 from a targeted PCR panel should also be justified.",
+      "Response",
+      "We thank the reviewer for identifying this error. The diversity indices were recalculated from the participant-by-16-species concentration matrix. Richness is the number of species detected, Shannon diversity uses natural logarithms, and evenness is H/ln(S); S ≤ 16 and H ≤ ln(S) were confirmed for every participant. Chao1 was removed because it is not appropriate for a fixed PCR panel. The corrected values are 9.04 ± 3.08 versus 10.70 ± 2.48 for richness, 1.55 ± 0.40 versus 1.55 ± 0.31 for Shannon diversity, and 0.72 ± 0.15 versus 0.66 ± 0.10 for evenness (non-halitosis versus halitosis). The Methods state that these indices describe the targeted panel, not the whole oral microbial community.",
+      "Revised locations — Methods 2.4; Results 3.1; Table 1.",
+      "Comment 4",
+      "Consistency of bacterial quantification The Methods state that total bacterial abundance was quantified using universal 16S rRNA primers. However, the sum of the reported individual bacterial abundances closely approximates the total bacterial abundance presented in Supplementary Table 1. The authors should clarify whether total bacterial abundance was independently measured or calculated from the targeted species. Additionally, Lacticaseibacillus casei was included among the 16 analyzed species but appears to be missing from Supplementary Table 1. The completeness and consistency of the bacterial data should be verified.",
+      "Response",
+      "The quantity reported as total bacterial abundance in this analysis is the sum of the 16 targeted PCR concentrations. We removed the universal-16S wording from its definition and now identify it consistently as the 16-target panel sum. We recalculated the raw-scale total comparison directly from the public workbook (Welch P = 0.0117653, displayed as 0.0118). Supplementary Table 1 now includes L. casei, whose historical assay name in the workbook is Lactobacillus casei, and all multiplicity adjustments cover the 16 targets. L. casei had raw-scale Welch P = 0.9261 and Bonferroni P = 1.0000. This revision concerns the displayed panel total and does not infer an independent load measurement from that sum.",
+      "Revised locations — Methods 2.3; Results 3.2; Supplementary Tables 1 and 3.",
+      "Comment 5",
+      "Statistical interpretation and clinical confounding None of the individual bacterial differences remained statistically significant after Bonferroni correction. Therefore, the identified species should be interpreted as exploratory associations rather than confirmed biomarkers. Furthermore, periodontal status, tongue coating, and salivary flow may substantially influence both bacterial profiles and VSC concentrations. The authors should clarify whether these factors were assessed and consider additional adjusted analyses if the data are available. Given the considerable variability in bacterial abundance, the suitability of the statistical tests should also be confirmed.",
+      "Response",
+      "We repeated species comparisons on log10(copies/mL + 1) with Welch and Mann–Whitney tests and correction across all 16 species. E. nodatum, P. micra and F. alocis passed the Bonferroni threshold on this scale in both tests. They remain exploratory associations. For three selected species, conventional logistic models adjusted for age, sex, smoking and oral hygiene; gas-association models used ln(1 + ppb) with HC3 robust standard errors. The adjusted odds ratios were 1.80 (95% CI 1.33–2.43) for E. nodatum and 1.34 (95% CI 1.07–1.67) for P. gingivalis. Benjamini–Hochberg adjustment covered the three species separately within each outcome. The current public analysis variables provide no separate periodontal, tongue-coating or salivary-flow measures for those adjustments. We state residual clinical confounding as a limitation. Figure 2A now uses the same log scale and multiplicity-adjusted tests as Supplementary Table 3.",
+      "Revised locations — Methods 2.6; Results 3.2; Discussion; Figure 2A; Supplementary Tables 3 and 6.",
+      "Comment 6",
+      "Reliability and clinical relevance of predictive models The sample size was relatively small (n = 102, including 30 halitosis cases) for the number and complexity of the evaluated models. The authors should provide additional details regarding model architecture, feature selection, preprocessing, and nested cross-validation, particularly whether all data- dependent procedures were conducted within the training folds. The best classification model achieved an AUROC of only 0.613, while the continuous prediction models explained approximately 19–24% of VSC variation. These results indicate limited clinical applicability. The authors should avoid overstating the predictive value of individual bacterial species and discuss the potential effects of overfitting and model-selection bias.",
+      "Response",
+      "Model architecture, preprocessing, feature construction and the nested cross-validation procedure are described in Methods 2.4 and 2.5 and in Response Table A1. In the stated nested-CV protocol, all data-dependent steps (cluster definition, encoding, standardization, oversampling, hyperparameter tuning and species selection) were performed within training folds only, and no test-fold participant was used for fitting. We agree that predictive performance is limited. In the revised analysis, the best AUROC was 0.66, the R2 confidence intervals for gas prediction included zero, and the nested selector produced negative R2 values. The Abstract and Discussion now state that the models have limited clinical applicability, and overfitting and model-selection bias are discussed.",
+      "Revised locations — Abstract; Methods 2.4–2.6; Discussion; Supplementary Table 8; Response Table A1.",
+      "Comment 7",
+      "Consistency of statistical reporting Several inconsistencies were identified in the supplementary materials, particularly regarding model selection and statistical comparisons. Supplementary Table 6 describes comparisons of R2 values, whereas the Methods refer to comparisons of absolute prediction errors. The number of models reported also appears inconsistent. The authors should verify these analyses and ensure consistency between the Methods, Results, and supplementary tables.",
+      "Response",
+      "The Friedman and paired Wilcoxon tests compare absolute gas-prediction errors in ppb, rather than R2 differences. Each participant contributes one error per model, obtained by averaging absolute outer-test errors over ten repetitions (102 paired observations). Friedman tests include all 22 linear specifications per gas; Holm correction covers all 231 pairwise comparisons within that gas. Supplementary Table 7B–D displays five non-Dummy models ranked by observed R2 for readability while retaining the full adjustment family. Its titles, footnotes, Methods 2.6 and Results 3.4 now agree. Figure 3 and Supplementary Figure 3 show all 22 linear and 19 Transformer configurations per outcome. The Transformer summaries lack the participant-level errors required for these paired tests; the paired-error inference is therefore restricted to the linear models.",
+      "Revised locations — Methods 2.6; Results 3.4; Figure 3; Supplementary Table 7B–D; Supplementary Figure 3.",
+      "We are grateful for the opportunity to strengthen this manuscript through peer review. Following repeated review and discussion among the authors, we have made every effort to respond fully to the applicable comments and to provide a transparent and reproducible account of the work. We sincerely hope that the revised manuscript will be accepted for publication in Oral Diseases.",
+      "Sincerely,",
+      "Yeon-Hee Lee and Yung-Kyun Noh\nOn behalf of all authors",
+      "Reference cited in this response",
+      "Akoglu H. User’s guide to correlation coefficients. Turkish Journal of Emergency Medicine. 2018;18:91–93. doi:10.1016/j.tjem.2018.08.001.",
+      "Kim MJ, Kang SK, Chun YH, Hong JP, Auh QS. Clinical Evaluation of Halitosis Patients in Korea. Journal of Oral Medicine and Pain. 2014;39:63–68. doi:10.14476/jomp.2014.39.2.63.",
+      "Additional analyses for the reviewer response",
+      "The following technical tables support the point-by-point replies. Their key methods, results and limitations are reflected in the manuscript and its eight supplementary tables; these additional details are provided here for reviewer assessment.",
+      "Response Table A1 Detailed methodological settings and model definitions"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "1690a4a05bec6f6d318b839e0a0a784b9cc4f0a02b8f7e55c09a8b9e1efeedd5"
+  },
+  {
+    "table": "A2A",
+    "file": "tables/response_A2A.csv",
+    "source_document": "1_Reviewer_Responses_R2.docx",
+    "source_table_index_zero_based": 1,
+    "rows_including_header": 5,
+    "columns": 3,
+    "preceding_caption_and_notes": [
+      "All 22 linear specifications and all 19 Transformer configurations per outcome are reported in Supplementary Tables 2 and 8. The main analyses use outer 5-fold × 10-repeat CV with inner 3-fold selection; permutation analyses separately use outer 5-fold × 2-repeat CV. OOF, out-of-fold; MSE, mean squared error; AUROC, area under the receiver operating characteristic curve.",
+      "Response Table A2 Additional correlation and cluster checks",
+      "A Hierarchical clustering sensitivity"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "57236e5ac9f1fc5dbc4f82f64a08729ebdbdc27ab0e1615322725e9a46ba548e"
+  },
+  {
+    "table": "A2B",
+    "file": "tables/response_A2B.csv",
+    "source_document": "1_Reviewer_Responses_R2.docx",
+    "source_table_index_zero_based": 2,
+    "rows_including_header": 13,
+    "columns": 5,
+    "preceding_caption_and_notes": [
+      "Average-linkage hierarchical clustering uses distance 1 − |Spearman rho| and a distance cut of 0.6 corresponding to the 0.4 correlation cutoff. This is a different grouping rule from positive-correlation connected components.",
+      "B Selected partial correlations adjusted for the panel sum"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "7eaee5e1908344972ba162cc7eca474aa1b56ee411e236932324a365bc9c644e"
+  },
+  {
+    "table": "A2C",
+    "file": "tables/response_A2C.csv",
+    "source_document": "1_Reviewer_Responses_R2.docx",
+    "source_table_index_zero_based": 3,
+    "rows_including_header": 5,
+    "columns": 6,
+    "preceding_caption_and_notes": [
+      "These selected pairs are from the 120 pairwise tests among 16 species; BH correction retains all 120 tests within each scale/method. Partial correlations adjust for log10(sum of 16 species + 1). This sum contains the tested species and is not independent universal 16S load.",
+      "C Fixed and training fold cluster membership"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "dbd99cc2ab1ea5f6e364bc0ecf42ddeb0c832af8c2d2705286ca04d0721da06c"
+  },
+  {
+    "table": "A3",
+    "file": "tables/response_A3.csv",
+    "source_document": "1_Reviewer_Responses_R2.docx",
+    "source_table_index_zero_based": 4,
+    "rows_including_header": 17,
+    "columns": 5,
+    "preceding_caption_and_notes": [
+      "The three gas outcomes share the same K-fold splits; one set of regression membership rows is shown. Cluster 1 is the largest cluster, Cluster 2 the second largest. Missing second clusters use clinical-only fallback. Shared membership is descriptive and does not establish normalization robustness.",
+      "Response Table A3 Additional raw concentration effect size audit"
+    ],
+    "status": "reported_reference; not freshly refitted",
+    "table_cell_sha256": "e44520e7eb94f57d585ff4648729a78464c6f29c6c6566315c9e1c12fca5d693",
+    "following_notes": [
+      "Differences are halitosis minus non-halitosis. Each test column lists raw p / Bonferroni p / BH p; correction is across all 16 species separately within each scale and test. Effect CIs use 2,000 participant bootstrap resamples within groups. Cliff’s delta is a rank effect size; positive values indicate larger concentrations or transformed values in halitosis. Raw concentrations are copies/mL; relative abundance divides each species by the 16-species sum; CLR is ln(x + 1 copy/mL) minus the panel mean log value. Natural and base-10 logarithms are distinguished. These are group-association analyses, not model performance estimates."
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+﻿Model,Single P. endodontalis,Single P. gingivalis,Single E. nodatum,Single P. intermedia,Cluster 1 score
+Single P. endodontalis,—,1.0000,1.0000,1.0000,1.0000
+Single P. gingivalis,1.0000,—,1.0000,0.1595,0.9102
+Single E. nodatum,1.0000,1.0000,—,0.0324,1.0000
+Single P. intermedia,1.0000,0.1595,0.0324,—,1.0000
+Cluster 1 score,1.0000,0.9102,1.0000,1.0000,—

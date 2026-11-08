@@ -1,0 +1,24 @@
+﻿Component,Definition or setting
+Data,"102 participants; supplied labels retained (72 non-halitosis, 30 halitosis); only the 16 PCR species were used."
+Clinical inputs,"Age (numeric); sex, smoking and oral hygiene (categorical). All non-Dummy models include these four variables."
+Species and cluster inputs,Raw copies/mL; training-fitted z-score standardization. No global log transformation or total-load normalization was applied to these predictive inputs.
+Cluster definition,Pooled positive Pearson r > 0.4 connected components. The largest and second cluster are redefined using only each inner or outer training subset. Connected paths need not meet r > 0.4 for every pair.
+Cluster 1 score,One numeric input: the mean log10(copies/mL + 1) across species in that training-defined largest cluster. It is used with the four clinical variables and is restricted to linear models.
+Nested best-species selector,Inner CV chooses the single species and its tuned model setting; the selected species is refitted on the outer training fold and evaluated on its untouched test fold.
+Dummy references,Classification predicts the original training-fold positive proportion for every test participant. Regression predicts the outer training-fold target mean. Dummy uses neither clinical nor PCR predictors and is not oversampled.
+Missing values,No analysis-variable values were missing. The executed configuration raises an error for missing predictors; no imputation-based sensitivity analysis is claimed.
+Categorical handling,Training-fitted category codes are supplied to SMOTENC; valid categorical values are checked. Final estimator inputs use one-hot encoding; test-fold categories do not inform fitted encoding.
+Main imbalance method,"SMOTENC in classification training folds only, k_neighbors = 5. Regression is not oversampled. Main classification uses no simultaneous class weighting."
+Weighting sensitivity,No oversampling; LogisticRegression class_weight = balanced. This is a separate analysis from SMOTENC.
+Linear estimators,"scikit-learn LogisticRegression with L2 penalty, lbfgs, max_iter = 5000; Ridge regression for gas concentrations."
+Inner grid,"Logistic C and Ridge alpha: 0.01, 0.1, 1, 10. Three inner folds; maximize mean AUROC for classification and minimize mean MSE for regression."
+Outer evaluation,"Five outer folds repeated ten times, random seed 42. Stratified folds for classification; K-fold for regression. Test data are not oversampled."
+Classification decision,Predicted positive at probability ≥ 0.5. AUROC does not use that decision threshold.
+Primary summary,"Pool the five test folds within each repetition, calculate each metric, and average the ten repetition-specific metrics. Report repetition SD, fold SD and bootstrap CI separately."
+Bootstrap,"10,000 participant resamples; all repeated predictions and paired models stay with each participant. Classification resampling preserves class counts. CIs hold saved predictions fixed and exclude refitting/selection uncertainty."
+Gas sensitivity,"Refit with log1p target ln(1 + y), where y is concentration in ppb. Report log-scale R2 separately from inverse-transformed raw-ppb R2, MAE and RMSE."
+Training-mean OOF R2,"1 − SSEmodel/SSEreference, with each test participant reference set to the matching outer training-fold mean. This differs from conventional R2 based on the evaluation-set mean."
+Label permutation,"100 permutations; observed and null outer 5-fold × 2 repeats with inner 3-fold CV. Reshuffle labels by participant, re-stratify classification folds, and rerun preprocessing, cluster definition, model selection and fitting."
+Family-wise permutation scope,21 non-Dummy linear classification specifications; 21 per gas and 63 across all three gases. Dummy is excluded from the maximum. This numerical family covers linear models only. Permutation inference is restricted to the linear candidates.
+Model totals,22 linear specifications for classification and for each of the three gases; 88 outcome-specific results. The 22 include Dummy and the nested selector.
+Transformer main and seed analysis,"Locally implemented PyTorch feature Transformer; no positional encoding. Grid: embedding 16, 32 or 64; heads 4; depth 3; learning rate 0.0001; 100 epochs; batch 8; dropout 0.1; no early stopping. Main outer 5×10, inner 3. Performance is summarized across three training seeds; seed SDs quantify training-seed variation."

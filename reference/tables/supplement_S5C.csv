@@ -1,0 +1,4 @@
+﻿Definition,Positive n,Negative n,Largest observed AUROC,Model with largest AUROC,Nested selector AUROC
+Primary definition (complaint + VSC reference criterion),30,72,0.66,Single E. nodatum,0.65
+Sex-specific upper-quartile VSC criterion,26,76,0.65,Cluster 1 score,0.58
+VSC-only reference criterion (exploratory),36,66,Not evaluated,Not evaluated,Not evaluated

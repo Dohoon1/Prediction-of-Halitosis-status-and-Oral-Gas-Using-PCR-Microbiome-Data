@@ -1,0 +1,104 @@
+{
+  "upstream_url": "https://github.com/Dohoon1/Prediction-of-Halitosis-status-and-Oral-Gas-Using-PCR-Microbiome-Data",
+  "upstream_commit": "51a1e0ad7f8506cd2e537644bf8ae6535a2d5b7c",
+  "upstream_code_sha256": {
+    "01_analysis.py": "d45952afdf80f8540bf4f152a43ed1832d261a368701d0aa200c38ae5f1306cc",
+    "02_figures.py": "3a7bb6143102a3f1e4640abf1b15128b6a4a16e6b5197dc89e5c89707874ab93",
+    "03_permutation_figures.py": "dcb913a6d6e70e9726f94fb3fa3d77dee96e4956bedaa4bf7822d38f4b5e0d52",
+    "common.py": "13965c19acf2b08cbcebeb21efe48e58cced67c5149ce89794142636c226a39b",
+    "modeling.py": "fdab935e01090c0681abba75110fd774f923f2f24394cc2211a69f78b5af64e1",
+    "neural.py": "701ef819b3cd1e9e53f20662e5c6cd50a120699596eac9ce74d9e2efce509c08",
+    "pcr_statistics.py": "58c36add85735ff23e4fc89aadfc5338e7a7c4d493cd4d044501e4a67409d229",
+    "reporting.py": "51efd0795066d086875e48bedfa5b7fd2c74ceb2fc26cb2dd79343312c700a5d",
+    "sensitivity.py": "90f8b144b504b6c0567e5564ed6164d652d991046282ced2e642919829280d59",
+    "validation.py": "afe50dbbcb86e092cac0bd9bcb52dae8f57282a1d72a4ff6255aef23e4a572b1"
+  },
+  "workbook_sha256": "75ad27c513f2705fe893f14be6535a3c8e67de7ab6150251024bcb18cbfcfc5f",
+  "manuscript_sha256": {
+    "1_Reviewer_Responses_R2.docx": "e70b133bed7e9b9fa34934ec234e17e04d5289a8af649b012b7f6cc9e5fbd506",
+    "2_Manuscript_R2.docx": "b1adf93854fb54563ada16692974724eccd4a339aa8b821bbca507e35810ebdb",
+    "2b_Manuscript_R2_Clean.docx": "d04945d49190ad757969ef8caeb65cb27cf7c851a8a49cdda8a22f2feff04327",
+    "3_Tables_R2.docx": "0d7dad39fc3657c0c5b41afefc3906a5b934eecb92c0fcaacd47dc45a6717a4e",
+    "4_Supplementary_R2.docx": "f6ba0a15e3bbdcb5233148158e84b6659895e8a5cae6dfc68464f6e51c182671",
+    "5_STROBE_Checklist_R2.docx": "92d48063560655ed87ce19c95112a0d6300f758d49accccdc56bee191746a8e2"
+  },
+  "full_model_refitting_performed_in_code_cleanup": false,
+  "note": "Reference tables retain supplied results; new runs are independent outputs. Public repository has not been pushed or modified by this cleanup.",
+  "manuscript_sha256_before_table1_reviewer3_update": {
+    "1_Reviewer_Responses_R2.docx": "58195fd33aa728a54e0e1887781dd90f4e9a9c0d241491e81acbe2c87eaaadfe",
+    "2_Manuscript_R2.docx": "7b02940dc53d547e3f8b8f85257dc6d7c735514db65991c9bdf4a2c793648343",
+    "2b_Manuscript_R2_Clean.docx": "aa006d1fa0643e00a592509d8aac0c211a2b464bc9348f4010e13095bea8b9cf",
+    "3_Tables_R2.docx": "7638f078d8ef319d0acdb2d7749163686b85d794560c9f22d20b02bb8a830aa0",
+    "4_Supplementary_R2.docx": "f71aaf2a9917ac77f1b64ec106c1817cc95d1bdd9a8955068cce330f67ab8609",
+    "5_STROBE_Checklist_R2.docx": "2ce9e8fa881f171fd5083d8c50a2929a3c50a98ad67fcbbabbf7064450b7f7ec"
+  },
+  "subsequent_document_update": {
+    "scope": "Table 1 layout repair and verbatim Reviewer 3 appendix styled consistently with Reviewers 1 and 2. No analysis code, data or reported numerical results changed.",
+    "reviewer3_source": "User-supplied 1_Reviewer_Responses_R2.docx, paragraphs 109-110",
+    "reviewer3_source_text_sha256": "cb11b52c71b3291f34cde08cdef4b9bd914fde5002b54494951e30cb6addffdb"
+  },
+  "manuscript_sha256_before_citation_update": {
+    "1_Reviewer_Responses_R2.docx": "0de9521c626a75b372da0f3b3202353b8c35b10509bc2998368057c47cf3b976",
+    "2_Manuscript_R2.docx": "7b02940dc53d547e3f8b8f85257dc6d7c735514db65991c9bdf4a2c793648343",
+    "2b_Manuscript_R2_Clean.docx": "aa006d1fa0643e00a592509d8aac0c211a2b464bc9348f4010e13095bea8b9cf",
+    "3_Tables_R2.docx": "779edea5f13ccb151ab922f41c93266bea75692479cfb09ce08c68e80fc6bd2d",
+    "4_Supplementary_R2.docx": "f71aaf2a9917ac77f1b64ec106c1817cc95d1bdd9a8955068cce330f67ab8609",
+    "5_STROBE_Checklist_R2.docx": "2ce9e8fa881f171fd5083d8c50a2929a3c50a98ad67fcbbabbf7064450b7f7ec"
+  },
+  "in_text_citation_update": {
+    "scope": "Added missing narrative callouts for Supplementary Figures 1, 2 and 3A-D. All 16 numbered tables and figures are cited in the actual body; captions were excluded from the check.",
+    "changed_body_paragraphs": [
+      57,
+      59,
+      63,
+      67
+    ],
+    "numerical_results_and_images_unchanged": true,
+    "marked_and_clean_text_identical": true
+  },
+  "manuscript_sha256_before_table2_group_update": {
+    "1_Reviewer_Responses_R2.docx": "0de9521c626a75b372da0f3b3202353b8c35b10509bc2998368057c47cf3b976",
+    "2_Manuscript_R2.docx": "a9b467a68055028ce31021c86c72170a1a13e6d26eb6fda04822f179b1e453ad",
+    "2b_Manuscript_R2_Clean.docx": "5b29e8f0ddfb3a015e1ea719664fe2a87d408e3b6d38db3204bd4578ea4e2d27",
+    "3_Tables_R2.docx": "779edea5f13ccb151ab922f41c93266bea75692479cfb09ce08c68e80fc6bd2d",
+    "4_Supplementary_R2.docx": "f71aaf2a9917ac77f1b64ec106c1817cc95d1bdd9a8955068cce330f67ab8609",
+    "5_STROBE_Checklist_R2.docx": "2ce9e8fa881f171fd5083d8c50a2929a3c50a98ad67fcbbabbf7064450b7f7ec"
+  },
+  "table2_group_layout_update": {
+    "removed_column": "Task",
+    "columns_before": 12,
+    "columns_after": 11,
+    "section_labels": [
+      "Binary halitosis classification",
+      "Gas prediction"
+    ],
+    "data_records": 21,
+    "outcome_column_retained": true,
+    "numerical_results_and_native_super_subscript_formatting_unchanged": true,
+    "audit": "validation/table2_group_layout_audit.json"
+  },
+  "manuscript_sha256_before_final_review": {
+    "1_Reviewer_Responses_R2.docx": "0de9521c626a75b372da0f3b3202353b8c35b10509bc2998368057c47cf3b976",
+    "2_Manuscript_R2.docx": "a9b467a68055028ce31021c86c72170a1a13e6d26eb6fda04822f179b1e453ad",
+    "2b_Manuscript_R2_Clean.docx": "5b29e8f0ddfb3a015e1ea719664fe2a87d408e3b6d38db3204bd4578ea4e2d27",
+    "3_Tables_R2.docx": "b210902ed1551ac2e6b837c46f97f4612994681aad369c67057eb53ddda02a7e",
+    "4_Supplementary_R2.docx": "f71aaf2a9917ac77f1b64ec106c1817cc95d1bdd9a8955068cce330f67ab8609",
+    "5_STROBE_Checklist_R2.docx": "2ce9e8fa881f171fd5083d8c50a2929a3c50a98ad67fcbbabbf7064450b7f7ec"
+  },
+  "final_document_review": {
+    "checked_utc": "2026-11-08T02:14:34.936033+00:00",
+    "sources": {
+      "1_Reviewer_Responses_R2.docx": "1_Reviewer_Responses_R2(1).docx",
+      "2_Manuscript_R2.docx": "2_Manuscript_R2(1).docx",
+      "3_Tables_R2.docx": "3_Tables_R2(2).docx",
+      "4_Supplementary_R2.docx": "4_Supplementary_R2(1).docx",
+      "5_STROBE_Checklist_R2.docx": "5_STROBE_Checklist_R2(1).docx",
+      "2b_Manuscript_R2_Clean.docx": "Generated from the uploaded marked manuscript after the same corrections"
+    },
+    "scope": "Final review of the five newly uploaded documents. Reviewer 3 excluded from review and retained exactly, including XML formatting.",
+    "reviewer3_XML_sha256_unchanged": "69d6dfaf6d18a574abd0025fe18623764facc3fe4f310d97d7b48ff0819c84f9",
+    "analysis_code_data_and_reported_performance_values_unchanged": true,
+    "model_refitting_performed": false,
+    "report": "validation/final_review_report.json"
+  }
+}

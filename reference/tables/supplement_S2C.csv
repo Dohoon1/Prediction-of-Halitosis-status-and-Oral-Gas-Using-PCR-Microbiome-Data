@@ -1,0 +1,6 @@
+﻿Comparison scope,Models in maximum,Observed maximum,Family-wise p,Completed permutations
+Halitosis classification (AUROC),21,0.66,0.0396,100
+All three gases (R2),63,0.19,0.0297,100
+CH3SH (R2),21,0.15,0.0198,100
+H2S (R2),21,0.19,0.0297,100
+Total VSC (R2),21,0.19,0.0297,100

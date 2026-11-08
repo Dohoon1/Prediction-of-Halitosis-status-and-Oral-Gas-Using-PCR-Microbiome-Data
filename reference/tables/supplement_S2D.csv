@@ -1,0 +1,8 @@
+﻿Outcome,Model,Observed 5 × 2 score,Raw upper-tail p,Family-wise p,Within-gas family-wise p
+Halitosis,Clinical only,0.52,0.3267,0.6832,—
+Halitosis,Cluster 1 score,0.64,0.0396,0.0594,—
+Halitosis,Nested best-species selector,0.64,0.0297,0.0594,—
+Halitosis,Single E. nodatum,0.66,0.0198,0.0396,—
+CH3SH,Nested best-species selector,-0.00,0.0297,0.2079,0.1584
+H2S,Nested best-species selector,-0.05,0.1485,0.6040,0.4752
+Total VSC,Nested best-species selector,-0.04,0.1188,0.5347,0.4356

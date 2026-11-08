@@ -1,0 +1,5 @@
+﻿Task,Cluster,Training sets,Exact matches,Mean Jaccard,Species range
+Classification,Cluster 1,50,26/50,0.95,12–15
+Classification,Cluster 2,50,40/50,0.80,0–2
+Gas regression,Cluster 1,50,32/50,0.96,12–15
+Gas regression,Cluster 2,50,41/50,0.82,0–2
